@@ -4,7 +4,7 @@ import Video from "@/components/video";
 
 export default function ProudZebra() {
   return (
-    <article className="prose prose-base xl:prose-xl prose-slate max-w-full p-8 md:p-20">
+    <article className="prose prose-base  prose-slate max-w-full p-8 md:p-20">
       <div className="max-w-full flex justify-center">
         <div className="max-w-prose xl:max-w-full xl:flex xl:gap-20">
           <div>

@@ -2,16 +2,44 @@ import Button from "./button";
 
 export default function Nav() {
   return (
-    <nav className="bg-white w-full z-10000000 flex fixed justify-between items-center py-4 px-4 md:px-12 lg:px-40">
-      <img src="../star.svg" className="h-8 w-auto"></img>
-
-      <div className="inline-flex gap-8">
-        <Button text="Home" hierarchy="tertiary" link="#"></Button>
-        <Button text="Projects" hierarchy="tertiary" link="#"></Button>
-        <Button text="About" hierarchy="tertiary" link="#"></Button>
-      </div>
-
-      <Button text="Resume" hierarchy="primary" link="#"></Button>
+    <nav
+      id="navigation"
+      className="fixed top-4 my-8 pointer-events-auto hidden md:block"
+    >
+      <ul className="flex w-fit rounded-full bg-white/90 px-3 text-sm font-medium text-slate-800 shadow-lg shadow-slate-800/5 ring-1 ring-zinc-900/5 backdrop-blur">
+        <li>
+          <a
+            className="relative block px-3 py-2 transition hover:text-blue-500"
+            href="/"
+          >
+            Home
+          </a>
+        </li>
+        <li>
+          <a
+            className="relative block px-3 py-2 transition hover:text-blue-500"
+            href="/about"
+          >
+            About
+          </a>
+        </li>
+        <li>
+          <a
+            className="relative block px-3 py-2 transition hover:text-blue-500"
+            href="/projects"
+          >
+            Projects
+          </a>
+        </li>
+        <li>
+          <a
+            className="relative block px-3 py-2 transition text-blue-500 hover:text-blue-700"
+            href="/"
+          >
+            Resume
+          </a>
+        </li>
+      </ul>
     </nav>
   );
 }

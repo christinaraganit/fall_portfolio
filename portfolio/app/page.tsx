@@ -4,8 +4,12 @@ import Overline from "@/components/overline";
 
 export default function Home() {
   return (
-    <main className="flex flex-col p-4 gap-8 md:p-12 md:gap-16 lg:gap-24 lg:py-24 lg:px-40 items-center">
-      <div className="prose prose-base xl:prose-xl pt-12 md:pt-20">
+    <main
+      className="flex flex-col items-center
+      gap-8 md:gap-16 lg:gap-24
+    p-4 md:p-12 lg:py-24 lg:px-40"
+    >
+      <div className="prose prose-base pt-12 md:pt-20">
         <Overline text="Welcome to the portfolio of" color="blue"></Overline>
         <h1>Christina Raganit, User Experience Designer</h1>
         <p className="lead">
@@ -16,7 +20,7 @@ export default function Home() {
       </div>
 
       <div className="flex flex-col gap-4 md:gap-8 lg:gap-12 items-center">
-        <div className="max-w-prose prose prose-base xl:prose-xl">
+        <div className="max-w-prose prose prose-base ">
           <Overline text="Projects" color="blue"></Overline>
           <h2>
             I craft thoughtful, purposeful, and user-centric design solutions.
@@ -31,7 +35,7 @@ export default function Home() {
         <div className="max-w-full grid lg:grid-cols-2 gap-4 lg:gap-8">
           <a
             href="/case-studies/watchdog"
-            className="prose prose-base xl:prose-xl max-w-full flex flex-col gap-2 lg:gap-4 px-8 pt-10 lg:px-12 lg:pt-12 rounded-3xl bg-blue-600 hover:bg-blue-700 transition justify-between"
+            className="prose prose-base  max-w-full flex flex-col gap-2 lg:gap-4 px-8 pt-10 lg:px-12 lg:pt-12 rounded-3xl bg-blue-600 hover:bg-blue-700 transition justify-between"
           >
             <div>
               <h3 className="text-white">Watchdog</h3>
@@ -55,7 +59,7 @@ export default function Home() {
 
           <a
             href="case-studies/chow-now"
-            className="prose prose-base xl:prose-xl max-w-full flex flex-col gap-2 lg:gap-4 px-8 pt-10 lg:px-12 lg:pt-12 rounded-3xl bg-orange-500 hover:bg-orange-600 transition justify-between"
+            className="no-underline prose prose-base  max-w-full flex flex-col gap-2 lg:gap-4 px-8 pt-10 lg:px-12 lg:pt-12 rounded-3xl bg-orange-500 hover:bg-orange-600 transition justify-between"
           >
             <div>
               <h3 className="text-white">Chow Now</h3>
@@ -79,7 +83,7 @@ export default function Home() {
 
           <a
             href="case-studies/proud-zebra"
-            className="prose prose-base xl:prose-xl max-w-full flex flex-col gap-2 lg:gap-4 px-8 pt-10 lg:px-12 lg:pt-12 rounded-3xl bg-indigo-600 hover:bg-indigo-700 transition justify-between"
+            className="prose prose-base  max-w-full flex flex-col gap-2 lg:gap-4 px-8 pt-10 lg:px-12 lg:pt-12 rounded-3xl bg-indigo-600 hover:bg-indigo-700 transition justify-between"
           >
             <div>
               <h3 className="text-white">Proud Zebra</h3>

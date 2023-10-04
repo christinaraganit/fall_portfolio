@@ -2,7 +2,7 @@ import Button from "./button";
 
 export default function Contact() {
   return (
-    <div className="bg-blue-50/60 prose prose-base xl:prose-xl max-w-full py-8 lg:py-12 flex flex-col items-center px-8 md:px-16">
+    <div className="bg-blue-50/30 prose prose-base  max-w-full py-8 lg:py-12 flex flex-col items-center px-8 md:px-16">
       <p className="max-w-prose text-center font-medium leading-snug">
         Let's make something cool together.<br></br>Send me an email or connect
         with me on LinkedIn!

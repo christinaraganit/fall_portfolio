@@ -23,7 +23,7 @@ const config: Config = {
         base: {
           css: {
             h1: {
-              marginBottom: '1.5rem',
+              marginBottom: '1rem',
             },
             h2: {
               marginTop: '0.5rem',
@@ -31,6 +31,9 @@ const config: Config = {
             },
             h3: {
               marginTop: '0.5rem',
+            },
+            p: {
+              marginTop: '0rem',
             },
             img: {
               marginBottom: '0rem',

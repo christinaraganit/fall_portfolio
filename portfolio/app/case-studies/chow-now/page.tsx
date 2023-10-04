@@ -2,28 +2,41 @@
 
 import Detail from "@/components/case-studies/detail";
 import Overline from "@/components/overline";
+import Section from "@/components/section";
 import { Disclosure } from "@headlessui/react";
 import { ChevronUpIcon } from "@heroicons/react/20/solid";
+import Chip from "@/components/chip";
 
 export default function ChowNow() {
   return (
-    <article className="prose prose-base xl:prose-xl prose-slate max-w-full m-8 md:m-20">
-      <div className="max-w-full flex justify-center">
-        <div className="max-w-prose xl:max-w-full xl:flex xl:gap-20">
-          <div>
-            <h1>Chow Now</h1>
-            <p className="lead max-w-prose xl:pr-20">
-              Disguised as a typical food delivery application, Chow Now offers
-              a discreet way for victims of domestic violence to confidentially
-              report incidents of abuse to local authorities, ensuring their
-              safety while avoiding suspicion from their abusers.
-            </p>
-          </div>
+    <article
+      className="prose prose-base  prose-slate max-w-full
+    gap-8 md:gap-16 lg:gap-24
+    p-4 md:p-12 lg:py-24 lg:px-40 lg:pb-12 flex flex-col items-center"
+    >
+      <section id="image" className="flex justify-center mt-20 lg:mt-0">
+        <img
+          src="../case-studies/chow-now/chownow_header.png"
+          className="max-w-full rounded-xl"
+        ></img>
+      </section>
 
-          <div>
+      <div
+        id="content"
+        className="max-w-6xl flex flex-col gap-8 md:gap-12 items-center"
+      >
+        <Section heading="Case study">
+          <h1>Chow Now</h1>
+          <p className="lead">
+            Disguised as a typical food delivery application, Chow Now offers a
+            discreet way for victims of domestic violence to confidentially
+            report incidents of abuse to local authorities, ensuring their
+            safety while avoiding suspicion from their abusers.
+          </p>
+          <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-2 lg:gap-x-8">
             <Detail
               title="Role"
-              text="User Experience Researcher User Interface Designer, Frontend Developer"
+              text="User Experience Researcher, User Interface Designer, Frontend Developer"
             ></Detail>
             <Detail
               title="Team"
@@ -42,24 +55,13 @@ export default function ChowNow() {
               text="1st Place Winner (out of 44 teams) and Best Design Award"
             ></Detail>
           </div>
-        </div>
-      </div>
-
-      <div className="max-w-full flex justify-center">
-        <img
-          src="../case-studies/chow-now/chownow_header.png"
-          className="max-w-full rounded-xl"
-        ></img>
-      </div>
-
-      <div className="max-w-full flex justify-center">
-        <div className="prose max-w-prose my-12">
-          <Overline text="Content warning" color="orange"></Overline>
-          <h2>
+        </Section>
+        <Section heading="Content warning">
+          <h4>
             The following content may contain mentions of domestic abuse and
             violence, which may be distressing or triggering for some
             individuals.
-          </h2>
+          </h4>
           <p>
             Please proceed with caution and prioritize your well-being while
             reading. If you or someone you know is experiencing abuse, please
@@ -75,12 +77,12 @@ export default function ChowNow() {
             </li>
             <li>South Asian Women's Centre: (604)-326-3000</li>
           </ul>
-
-          <Overline text="Problem space" color="orange"></Overline>
-          <h2>
+        </Section>
+        <Section heading="Problem space">
+          <h3>
             In 2019, a woman in Ohio reported an incident of domestic abuse by
             pretending to order a pizza.
-          </h2>
+          </h3>
           <p>
             The discretion was imperative because the abuser was in the same
             room as her. Fortunately, the situation ended well for the caller,
@@ -96,19 +98,19 @@ export default function ChowNow() {
             that trigger such violence are either threats of separation by their
             partners or actual separation <a href="#1">[1]</a>.
           </p>
-
-          <Overline text="Framing" color="orange"></Overline>
+        </Section>
+        <Section heading="Framing">
           <h2>
             How might we offer victims of domestic violence a discreet way to
             report incidents of abuse and facilitate their access to the
             necessary aid?
           </h2>
-
-          <Overline text="Understanding users" color="orange"></Overline>
-          <h2>
+        </Section>
+        <Section heading="Solution">
+          <h3>
             Through my research, I identified insights on how to design an app
             that could remain undetected.
-          </h2>
+          </h3>
           <h4>
             Studying the relationship between sports and domestic violence
           </h4>
@@ -133,19 +135,20 @@ export default function ChowNow() {
             was during England's final group match against Belgium{" "}
             <a href="#5">[5]</a>.
           </p>
-
-          <Overline text="Solution" color="orange"></Overline>
-          <h2>
+        </Section>
+        <Section heading="Solution">
+          <h3>
             Disguised as a typical food delivery application, Chow Now enables
             victims of domestic violence to confidentially report incidents of
             abuse to local authorities with discretion, ensuring their safety
             while avoiding suspicion from their abusers.
-          </h2>
+          </h3>
+
+          <h4>Guiding users with a comprehensive onboarding flow</h4>
           <img
             src="../case-studies/chow-now/onboarding.png"
             className="rounded-xl"
           ></img>
-          <h4>Guiding users with a comprehensive onboarding flow</h4>
           <p className="pb-4">
             In Chow Now, certain controls deviate from the standard of typical
             takeout delivery apps. This intentional design choice enables users
@@ -156,14 +159,15 @@ export default function ChowNow() {
             Therefore, a thorough onboarding flow will provide users with a
             clear understanding of how to navigate the app effectively.
           </p>
-          <img
-            src="../case-studies/chow-now/location-services.png"
-            className="rounded-xl"
-          ></img>
+
           <h4>
             Enhancing the efficiency of reporting incidents with location
             services
           </h4>
+          <img
+            src="../case-studies/chow-now/location-services.png"
+            className="rounded-xl"
+          ></img>
           <p className="pb-4">
             By requesting the user's location with location services, Chow Now
             streamlines the reporting process of domestic violence incidents to
@@ -171,14 +175,15 @@ export default function ChowNow() {
             victims as it enables faster and more accurate response times,
             ensuring their safety and well-being.
           </p>
-          <img
-            src="../case-studies/chow-now/add-emergency-contact.png"
-            className="rounded-xl"
-          ></img>
+
           <h4>
             Assisting users in preparing for emergencies by including emergency
             contacts
           </h4>
+          <img
+            src="../case-studies/chow-now/add-emergency-contact.png"
+            className="rounded-xl"
+          ></img>
           <p className="pb-4">
             Chow Now offers users the capability to add emergency contacts,
             enabling a swift connection to trusted individuals who can provide
@@ -187,13 +192,14 @@ export default function ChowNow() {
             system, providing an additional layer of protection in times of
             distress.
           </p>
+
+          <h4>
+            Facilitating the ability to report incidents of domestic violence
+          </h4>
           <img
             src="../case-studies/chow-now/report-incident.png"
             className="rounded-xl"
           ></img>
-          <h4>
-            Facilitating the ability to report incidents of domestic violence
-          </h4>
           <p className="pb-4">
             Users can report incidents of domestic violence to local authorities
             by placing an order from any “restaurant”. Subsequently, users can
@@ -202,13 +208,14 @@ export default function ChowNow() {
             be promptly transmitted to the local authorities, along with any
             emergency contacts the user has added for swift action and support.
           </p>
+
+          <h4>
+            Providing discretion by allowing toggling between different views
+          </h4>
           <img
             src="../case-studies/chow-now/toggle-views.png"
             className="rounded-xl"
           ></img>
-          <h4>
-            Providing discretion by allowing toggling between different views
-          </h4>
           <p>
             Chow Now empowers users to maintain discretion and safeguard
             themselves from abusers by offering the ability to toggle between
@@ -220,13 +227,13 @@ export default function ChowNow() {
             is displayed. The featured restaurants are sourced from the area to
             appear more believable.
           </p>
-
-          <Overline text="Branding" color="orange"></Overline>
-          <h2>
+        </Section>
+        <Section heading="Branding">
+          <h3>
             The purpose of Chow Now is to emulate standard takeout delivery
             apps, which influenced our choice of colors, typography, and
             imagery.
-          </h2>
+          </h3>
           <img
             src="../case-studies/chow-now/chownow_brand.png"
             className="rounded-xl"
@@ -271,8 +278,8 @@ export default function ChowNow() {
             evokes a sense of familiarity associated with similar mobile
             applications.
           </p>
-
-          <Overline text="Technical implementation" color="orange"></Overline>
+        </Section>
+        <Section heading="Technical implementation">
           <h2>
             I spearheaded the design <i>and</i> led the charge in writing the
             frontend code.
@@ -339,8 +346,8 @@ export default function ChowNow() {
               emergency contacts.
             </li>
           </ul>
-
-          <Overline text="My contributions" color="orange"></Overline>
+        </Section>
+        <Section heading="My contributions">
           <h2>
             I employed my skills in design and development to achieve a
             successful hackathon project.
@@ -377,8 +384,8 @@ export default function ChowNow() {
             complete the frontend code before the deadline (albeit without the
             font I selected for the visual language).
           </p>
-
-          <Overline text="Reflection" color="orange"></Overline>
+        </Section>
+        <Section heading="Reflection">
           <h2>
             Chow Now won 1st place and the Best Design award at cmd-f 2023.
           </h2>
@@ -438,199 +445,153 @@ export default function ChowNow() {
               Award, sponsored by Iris Labs!
             </figcaption>
           </figure>
-
-          <div className="pt-2">
-            <Disclosure defaultOpen={true}>
-              {({ open }) => (
-                <>
-                  <Disclosure.Button
-                    className="prose max-w-full prose-slate flex items-center w-full justify-between hover:bg-orange-50 border border-orange-500/18 hover:border-orange-500/30 transition-all font-medium rounded-md px-4 py-2 outline-none
-                  focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-75"
-                  >
-                    <span className="text-orange-500">References</span>
-                    <ChevronUpIcon
-                      className={`${
-                        open ? "" : "rotate-180 transform"
-                      } h-6 w-6 text-orange-500`}
-                    />
-                  </Disclosure.Button>
-
-                  <Disclosure.Panel className="prose prose-slate">
-                    <ul>
-                      <li id="0">
-                        [0] H. Yan, “A 911 call with a fake pizza order helped
-                        stop a possible attack. But what if you can’t speak to
-                        911?,”
-                        <i>CNN</i>, November 26, 2019. [Online], Available:{" "}
-                        <a href="https://www.cnn.com/2019/11/26/us/what-to-do-if-you-cant-speak-to-911/index.html">
-                          https://www.cnn.com/2019/11/26/us/what-to-do-if-you-cant-speak-to-911/index.html
-                        </a>
-                        . [Accessed July 4, 2023].
-                      </li>
-                      <li id="1">
-                        [1] P. Tjaden and N. Thoennes, “Extent, Nature, and
-                        Consequences of Intimate Partner Violence: Findings From
-                        the National Violence Against Women Survey,”{" "}
-                        <i>National Institute of Justice</i>, July 2000.
-                        [Online]. Available:{" "}
-                        <a href="https://www.ojp.gov/pdffiles1/nij/181867.pdf">
-                          https://www.ojp.gov/pdffiles1/nij/181867.pdf
-                        </a>
-                        . [Accessed July 4, 2023].
-                      </li>
-                      <li id="2">
-                        [2] S. Boutilier, A. Jadidzadeh, E. Esina, L. Wells, and
-                        R. Kneebone, “The Connection Between Professional
-                        Sporting Events, Holidays and Domestic Violence in
-                        Calgary, Alberta,”{" "}
-                        <i>The School of Public Policy Publications</i>, vol.
-                        10, no. 12, June, 2017. [Online]. Available:{" "}
-                        <a href="https://www.policyschool.ca/wp-content/uploads/2017/06/Domestic-Violence-Boutilier-Jadidzadeh-Esina-Wells-Kneebone.pdf">
-                          https://www.policyschool.ca/wp-content/uploads/2017/06/Domestic-Violence-Boutilier-Jadidzadeh-Esina-Wells-Kneebone.pdf
-                        </a>
-                        . [Accessed July 4, 2023].
-                      </li>
-                      <li id="3">
-                        [3] S. Kirby, B. Francis, and R. O’Flaherty, “Can the
-                        FIFA World Cup Football (Soccer) Tournament Be
-                        Associated with an Increase in Domestic Abuse?,”{" "}
-                        <i>Journal of Research in Crime and Delinquency</i>,
-                        vol. 51, no. 3, July 22, 2013. [Online]. Available:{" "}
-                        <a href="https://journals.sagepub.com/doi/full/10.1177/0022427813494843">
-                          https://journals.sagepub.com/doi/full/10.1177/0022427813494843
-                        </a>
-                        . [Accessed July 4, 2023].
-                      </li>
-                      <li id="4">
-                        [4] C. Brown, “NFL fans will spend $485 million for the
-                        kick-off including $61 million of pizza and $48 million
-                        of beer,” <i>PredictHQ</i>, September 8, 2020. [Online].
-                        Available:{" "}
-                        <a href="https://www.predicthq.com/blog/nfl-viewership">
-                          https://www.predicthq.com/blog/nfl-viewership
-                        </a>
-                        . [Accessed July 4, 2023].
-                      </li>
-                      <li id="5">
-                        [5] Caterlyst, “Restaurants buck trend as Deliveroo
-                        demand surges with World Cup,” <i>Caterlyst</i>, July 2,
-                        2018. [Online]. Available:{" "}
-                        <a href="https://www.caterlyst.com/caterlyst3/insight/Insight.aspx?n=21761">
-                          https://www.caterlyst.com/caterlyst3/insight/Insight.aspx?n=21761
-                        </a>
-                        . [Accessed July 4, 2023].
-                      </li>
-                      <li id="6">
-                        [6] H. Okuda, M. Tasaka, A. Yui, and S. Kawasome,
-                        “Correlation between the image of food colors and the
-                        taste sense: The case of Japanese Twenties,”{" "}
-                        <i>Journal of Cookery Science of Japan</i>, vol. 35, no.
-                        1, 2003, pp. 2–9, 2003.
-                      </li>
-                      <li id="7">
-                        [7] S. Conroy, “Family violence in Canada: A statistical
-                        profile, 2019,”{" "}
-                        <i>
-                          Canadian Centre for Justice and Community Safety
-                          Statistics
-                        </i>
-                        , March 2, 2021. [Online]. Available:{" "}
-                        <a href="https://www150.statcan.gc.ca/n1/pub/85-002-x/2021001/article/00001/03-eng.htm">
-                          https://www150.statcan.gc.ca/n1/pub/85-002-x/2021001/article/00001/03-eng.htm
-                        </a>
-                        . [Accessed July 4, 2023].
-                      </li>
-                      <li id="8">
-                        [8] S. M. Peitzmeier, M. Malik, S. K. Kattari, E.
-                        Marrow, R. Stephenson, M. Agénor, and S. L. Reisner,
-                        “Intimate Partner Violence in Transgender Populations:
-                        Systematic Review and Meta-analysis of Prevalence and
-                        Correlates,” <i>American Public Health Association</i>,
-                        August 12, 2020. [Online]. Available:{" "}
-                        <a href="https://ajph.aphapublications.org/doi/abs/10.2105/AJPH.2020.305774?journalCode=ajph">
-                          https://ajph.aphapublications.org/doi/abs/10.2105/AJPH.2020.305774?journalCode=ajph
-                        </a>
-                        . [Accessed July 4, 2023].
-                      </li>
-                    </ul>
-                  </Disclosure.Panel>
-                </>
-              )}
-            </Disclosure>
-          </div>
-
-          <div className="pt-4">
-            <Disclosure defaultOpen={false}>
-              {({ open }) => (
-                <>
-                  <Disclosure.Button
-                    className="prose prose-slate max-w-full flex items-center w-full justify-between hover:bg-orange-50 border border-orange-500/18 hover:border-orange-500/30 transition-all font-medium rounded-md px-4 py-2 outline-none
-                  focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-75"
-                  >
-                    <span className="text-orange-500">Resources</span>
-                    <ChevronUpIcon
-                      className={`${
-                        open ? "" : "rotate-180 transform"
-                      } h-6 w-6 text-orange-500`}
-                    />
-                  </Disclosure.Button>
-
-                  <Disclosure.Panel className="prose prose-slate">
-                    <ul>
-                      <li>
-                        [@freepik] on Freepik.{" "}
-                        <i>Free vector flat design korean food logo design</i>{" "}
-                        [Vector]. Freepik.{" "}
-                        <a href="https://www.freepik.com/free-vector/flat-design-korean-food-logo-design_30576747.htm#page=2&query=food%20app%20logo&position=19&from_view=search&track=ais">
-                          https://www.freepik.com/free-vector/flat-design-korean-food-logo-design_30576747.htm#page=2&query=food%20app%20logo&position=19&from_view=search&track=ais
-                        </a>
-                        .
-                      </li>
-                      <li>
-                        [@pikisuperstar] on Freepik.{" "}
-                        <i>Free vector hand drawn cute food collection</i>{" "}
-                        [Vector]. Freepik.{" "}
-                        <a href="https://www.freepik.com/free-vector/hand-drawn-cute-food-collection_10883331.htm#query=food%20illustration&position=28&from_view=search&track=ais">
-                          https://www.freepik.com/free-vector/hand-drawn-cute-food-collection_10883331.htm#query=food%20illustration&position=28&from_view=search&track=ais
-                        </a>
-                        .
-                      </li>
-                      <li>
-                        [@pikisuperstar] on Freepik.{" "}
-                        <i>Free vector ramen soup on blue background</i>{" "}
-                        [Vector]. Freepik.{" "}
-                        <a href="https://www.freepik.com/free-vector/ramen-soup-blue-background_9979167.htm#page=3&query=food%20illustration&position=2&from_view=search&track=ais">
-                          https://www.freepik.com/free-vector/ramen-soup-blue-background_9979167.htm#page=3&query=food%20illustration&position=2&from_view=search&track=ais
-                        </a>
-                        .
-                      </li>
-                    </ul>
-                  </Disclosure.Panel>
-                </>
-              )}
-            </Disclosure>
-          </div>
+        </Section>
+        <Section heading="Read my next case study">
           <a
-            href="/case-studies/proud-zebra"
-            className="mt-12 text-indigo-500 rounded-xl outline-none prose
-            focus:outline-none focus-visible:ring focus-visible:ring-indigo-500 focus-visible:ring-opacity-75 transition
-             flex-row items-center bg-indigo-50/30 flex hover:bg-indigo-100/30 border border-indigo-500/30 hover:border-indigo-500/3 no-underline p-4 md:p-0 md:px-8 gap-8 max-w-full"
+            href="../case-studies/proud-zebra"
+            className="no-underline prose prose-base  max-w-full flex flex-col px-8 pt-10 lg:px-12 lg:pt-12 rounded-3xl bg-indigo-600 hover:bg-indigo-700 transition justify-between"
           >
-            <div className="w-full lg:w-2/3">
-              <span className="prose-sm block mb-2">Read next case study</span>
-              <h2 className="text-indigo-500">Proud Zebra</h2>
-              <span>
+            <div>
+              <h3 className="text-white">Proud Zebra</h3>
+              <p className="text-white leading-normal">
                 How might we transform Proud Zebra's storytelling experience
                 into a digital solution that empowers the LGBTQ+ community,
-                drives engagement, and fosters a sense of brand loyalty?
-              </span>
+                drives engagement and fosters a sense of brand loyalty?
+              </p>
             </div>
             <img
-              className="w-1/3 hidden md:block"
-              src="../case-studies/proud-zebra/proudzebra_button.png"
+              src="../case-studies/proud-zebra/proudzebra_header_no_bg.png"
+              className="w-full"
             ></img>
           </a>
-        </div>
+        </Section>
+        <Section heading="References and resources">
+          <div className="prose prose-sm prose-slate max-w-full">
+            <ul>
+              <li id="0">
+                [0] H. Yan, “A 911 call with a fake pizza order helped stop a
+                possible attack. But what if you can’t speak to 911?,”
+                <i>CNN</i>, November 26, 2019. [Online], Available:{" "}
+                <a href="https://www.cnn.com/2019/11/26/us/what-to-do-if-you-cant-speak-to-911/index.html">
+                  https://www.cnn.com/2019/11/26/us/what-to-do-if-you-cant-speak-to-911/index.html
+                </a>
+                . [Accessed July 4, 2023].
+              </li>
+              <li id="1">
+                [1] P. Tjaden and N. Thoennes, “Extent, Nature, and Consequences
+                of Intimate Partner Violence: Findings From the National
+                Violence Against Women Survey,”{" "}
+                <i>National Institute of Justice</i>, July 2000. [Online].
+                Available:{" "}
+                <a href="https://www.ojp.gov/pdffiles1/nij/181867.pdf">
+                  https://www.ojp.gov/pdffiles1/nij/181867.pdf
+                </a>
+                . [Accessed July 4, 2023].
+              </li>
+              <li id="2">
+                [2] S. Boutilier, A. Jadidzadeh, E. Esina, L. Wells, and R.
+                Kneebone, “The Connection Between Professional Sporting Events,
+                Holidays and Domestic Violence in Calgary, Alberta,”{" "}
+                <i>The School of Public Policy Publications</i>, vol. 10, no.
+                12, June, 2017. [Online]. Available:{" "}
+                <a href="https://www.policyschool.ca/wp-content/uploads/2017/06/Domestic-Violence-Boutilier-Jadidzadeh-Esina-Wells-Kneebone.pdf">
+                  https://www.policyschool.ca/wp-content/uploads/2017/06/Domestic-Violence-Boutilier-Jadidzadeh-Esina-Wells-Kneebone.pdf
+                </a>
+                . [Accessed July 4, 2023].
+              </li>
+              <li id="3">
+                [3] S. Kirby, B. Francis, and R. O’Flaherty, “Can the FIFA World
+                Cup Football (Soccer) Tournament Be Associated with an Increase
+                in Domestic Abuse?,”{" "}
+                <i>Journal of Research in Crime and Delinquency</i>, vol. 51,
+                no. 3, July 22, 2013. [Online]. Available:{" "}
+                <a href="https://journals.sagepub.com/doi/full/10.1177/0022427813494843">
+                  https://journals.sagepub.com/doi/full/10.1177/0022427813494843
+                </a>
+                . [Accessed July 4, 2023].
+              </li>
+              <li id="4">
+                [4] C. Brown, “NFL fans will spend $485 million for the kick-off
+                including $61 million of pizza and $48 million of beer,”{" "}
+                <i>PredictHQ</i>, September 8, 2020. [Online]. Available:{" "}
+                <a href="https://www.predicthq.com/blog/nfl-viewership">
+                  https://www.predicthq.com/blog/nfl-viewership
+                </a>
+                . [Accessed July 4, 2023].
+              </li>
+              <li id="5">
+                [5] Caterlyst, “Restaurants buck trend as Deliveroo demand
+                surges with World Cup,” <i>Caterlyst</i>, July 2, 2018.
+                [Online]. Available:{" "}
+                <a href="https://www.caterlyst.com/caterlyst3/insight/Insight.aspx?n=21761">
+                  https://www.caterlyst.com/caterlyst3/insight/Insight.aspx?n=21761
+                </a>
+                . [Accessed July 4, 2023].
+              </li>
+              <li id="6">
+                [6] H. Okuda, M. Tasaka, A. Yui, and S. Kawasome, “Correlation
+                between the image of food colors and the taste sense: The case
+                of Japanese Twenties,”{" "}
+                <i>Journal of Cookery Science of Japan</i>, vol. 35, no. 1,
+                2003, pp. 2–9, 2003.
+              </li>
+              <li id="7">
+                [7] S. Conroy, “Family violence in Canada: A statistical
+                profile, 2019,”{" "}
+                <i>
+                  Canadian Centre for Justice and Community Safety Statistics
+                </i>
+                , March 2, 2021. [Online]. Available:{" "}
+                <a href="https://www150.statcan.gc.ca/n1/pub/85-002-x/2021001/article/00001/03-eng.htm">
+                  https://www150.statcan.gc.ca/n1/pub/85-002-x/2021001/article/00001/03-eng.htm
+                </a>
+                . [Accessed July 4, 2023].
+              </li>
+              <li id="8">
+                [8] S. M. Peitzmeier, M. Malik, S. K. Kattari, E. Marrow, R.
+                Stephenson, M. Agénor, and S. L. Reisner, “Intimate Partner
+                Violence in Transgender Populations: Systematic Review and
+                Meta-analysis of Prevalence and Correlates,”{" "}
+                <i>American Public Health Association</i>, August 12, 2020.
+                [Online]. Available:{" "}
+                <a href="https://ajph.aphapublications.org/doi/abs/10.2105/AJPH.2020.305774?journalCode=ajph">
+                  https://ajph.aphapublications.org/doi/abs/10.2105/AJPH.2020.305774?journalCode=ajph
+                </a>
+                . [Accessed July 4, 2023].
+              </li>
+            </ul>
+
+            <ul>
+              <li>
+                [@freepik] on Freepik.{" "}
+                <i>Free vector flat design korean food logo design</i> [Vector].
+                Freepik.{" "}
+                <a href="https://www.freepik.com/free-vector/flat-design-korean-food-logo-design_30576747.htm#page=2&query=food%20app%20logo&position=19&from_view=search&track=ais">
+                  https://www.freepik.com/free-vector/flat-design-korean-food-logo-design_30576747.htm#page=2&query=food%20app%20logo&position=19&from_view=search&track=ais
+                </a>
+                .
+              </li>
+              <li>
+                [@pikisuperstar] on Freepik.{" "}
+                <i>Free vector hand drawn cute food collection</i> [Vector].
+                Freepik.{" "}
+                <a href="https://www.freepik.com/free-vector/hand-drawn-cute-food-collection_10883331.htm#query=food%20illustration&position=28&from_view=search&track=ais">
+                  https://www.freepik.com/free-vector/hand-drawn-cute-food-collection_10883331.htm#query=food%20illustration&position=28&from_view=search&track=ais
+                </a>
+                .
+              </li>
+              <li>
+                [@pikisuperstar] on Freepik.{" "}
+                <i>Free vector ramen soup on blue background</i> [Vector].
+                Freepik.{" "}
+                <a href="https://www.freepik.com/free-vector/ramen-soup-blue-background_9979167.htm#page=3&query=food%20illustration&position=2&from_view=search&track=ais">
+                  https://www.freepik.com/free-vector/ramen-soup-blue-background_9979167.htm#page=3&query=food%20illustration&position=2&from_view=search&track=ais
+                </a>
+                .
+              </li>
+            </ul>
+          </div>
+        </Section>
       </div>
     </article>
   );

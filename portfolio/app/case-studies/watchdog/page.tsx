@@ -2,27 +2,39 @@
 
 import Detail from "@/components/case-studies/detail";
 import Overline from "@/components/overline";
+import Section from "@/components/section";
 import { Disclosure } from "@headlessui/react";
 import { ChevronUpIcon } from "@heroicons/react/20/solid";
 
 export default function Watchdog() {
   return (
-    <article className="prose prose-base xl:prose-xl prose-slate max-w-full m-8 md:m-20">
-      <div className="max-w-full flex justify-center">
-        <div className="max-w-prose xl:max-w-full xl:flex xl:gap-20">
-          <div>
-            <h1>Watchdog</h1>
-            <p className="lead max-w-prose xl:pr-20">
-              Anyone can be a victim of a scam—but not on our watch. Introducing
-              Watchdog, an AI-powered Google Chrome extension that sleuths out
-              scams, misinformation, and AI-generated content.
-            </p>
-          </div>
+    <article
+      className="prose prose-base  prose-slate max-w-full
+    gap-8 md:gap-16 lg:gap-24
+    p-4 md:p-12 lg:py-24 lg:px-40 lg:pb-12 flex flex-col items-center"
+    >
+      <section id="image" className="flex justify-center mt-20 lg:mt-0">
+        <img
+          src="../case-studies/watchdog/watchdog_header.png"
+          className="max-w-full rounded-xl"
+        ></img>
+      </section>
 
-          <div>
+      <div
+        id="content"
+        className="max-w-full flex flex-col gap-8 md:gap-12 items-center"
+      >
+        <Section heading="Case study">
+          <h1>Watchdog</h1>
+          <p className="lead">
+            Anyone can be a victim of a scam—but not on our watch. Introducing
+            Watchdog, an AI-powered Google Chrome extension that sleuths out
+            scams, misinformation, and AI-generated content.
+          </p>
+          <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-2 lg:gap-x-8">
             <Detail
               title="Role"
-              text="Interaction Designer, User Interface Designer, Frontend Developer"
+              text="Visual Designer, User Interface Designer, Frontend Developer"
             ></Detail>
             <Detail
               title="Team"
@@ -38,19 +50,8 @@ export default function Watchdog() {
               text="2nd Place (out of 27 teams) and Best UI/UX Design Award"
             ></Detail>
           </div>
-          <div></div>
-        </div>
-      </div>
-      <div className="max-w-full flex justify-center">
-        <img
-          src="../case-studies/watchdog/watchdog_header.png"
-          className="max-w-full rounded-xl"
-        ></img>
-      </div>
-
-      <div className="max-w-full flex justify-center">
-        <div className="prose max-w-prose my-12">
-          <Overline text="Problem space"></Overline>
+        </Section>
+        <Section heading="Problem space">
           <h2>Scammers are on the rise, and they're not going away.</h2>
           <blockquote>
             60% of scams originate from social media and technology platforms.
@@ -100,20 +101,15 @@ export default function Watchdog() {
             less aware and more susceptible to fraudulent activities. How can we
             safeguard such individuals from scams and fraud?
           </p>
-
-          <Overline text="Framing"></Overline>
+        </Section>
+        <Section heading="Framing">
           <h2>
             How might we develop a digital solution that safeguards individuals
             of all ages, ensuring their protection against fraudulent activities
             online?
           </h2>
-
-          <Overline text="Understanding users"></Overline>
-          <h2>
-            A carefully-crafted design solution with consideration of user needs
-            and preferences.
-          </h2>
-
+        </Section>
+        <Section heading="Understanding users">
           <h4>Ensuring cross-platform accessibility</h4>
           <p>
             When encountering an online scam or fraud for the first time,
@@ -133,18 +129,18 @@ export default function Watchdog() {
             experts must be incorporated into the user experience to improve
             efficiency.
           </p>
-
-          <Overline text="Solution"></Overline>
+        </Section>
+        <Section heading="Solution">
           <h2>
             Introducing Watchdog, an AI-powered Google Chrome extension and web
             application that sleuths out scams, misinformation and AI-generated
             content.
           </h2>
+          <h4>Clarifying the purpose of Watchdog with our landing page</h4>
           <img
             src="../case-studies/watchdog/responsive.png"
             className="rounded-xl"
           ></img>
-          <h4>Clarifying the purpose of Watchdog with our landing page</h4>
           <p>
             Crafted and coded with care, our responsive landing page presents an
             array of valuable information highlighting the features, benefits,
@@ -154,6 +150,9 @@ export default function Watchdog() {
             to align with the Watchdog brand, creating a cohesive brand
             experience.
           </p>
+          <h4>
+            Providing seamless cross-platform access with our web application
+          </h4>
           <video
             autoPlay
             loop
@@ -161,9 +160,6 @@ export default function Watchdog() {
             src="../case-studies/watchdog/landing_page.mp4"
             className="rounded-xl"
           ></video>
-          <h4>
-            Providing seamless cross-platform access with our web application
-          </h4>
           <p>
             Watchdog is completely responsive, ensuring accessibility to users
             on both mobile and desktop devices. By simply inputting text into
@@ -172,6 +168,9 @@ export default function Watchdog() {
             valuable insights regarding its likelihood of being a scam,
             misinformation, or AI-generated.
           </p>
+          <h4>
+            Identifying fraudulent content online with our Chrome extension
+          </h4>
           <video
             autoPlay
             loop
@@ -179,9 +178,6 @@ export default function Watchdog() {
             src="../case-studies/watchdog/chrome_extension.mp4"
             className="rounded-xl"
           ></video>
-          <h4>
-            Identifying fraudulent content online with our Chrome extension
-          </h4>
           <p>
             Desktop users can effortlessly identify suspicious content without
             relying on the web application open on another tab. By downloading
@@ -190,6 +186,10 @@ export default function Watchdog() {
             uninterrupted exploration while effectively detecting potential
             threats.
           </p>
+          <h4>
+            Streamlining the user experience with carefully-designed
+            accelerators
+          </h4>
           <video
             autoPlay
             loop
@@ -197,10 +197,6 @@ export default function Watchdog() {
             src="../case-studies/watchdog/accelerators.mp4"
             className="rounded-xl"
           ></video>
-          <h4>
-            Streamlining the user experience with carefully-designed
-            accelerators
-          </h4>
           <p>
             Empowering advanced desktop users, our Google Chrome extension
             offers an additional layer of functionality. With a simple
@@ -208,9 +204,9 @@ export default function Watchdog() {
             evaluates the content for suspicious material, allowing users to
             prioritize their browsing without any disruptive interruptions.
           </p>
-
-          <Overline text="Branding"></Overline>
-          <h2>Evoking trust and safety with the Watchdog brand.</h2>
+        </Section>
+        <Section heading="Branding">
+          <h3>Evoking trust and safety with the Watchdog brand.</h3>
           <img
             src="../case-studies/watchdog/watchdog_brand.png"
             className="rounded-xl"
@@ -252,20 +248,22 @@ export default function Watchdog() {
             throughout the application to reinforce the notion of guardianship
             and protection.
           </p>
-
-          <Overline text="Technical implementation"></Overline>
+        </Section>
+        <Section heading="Technical implementation">
           <h2>
             I spearheaded the design <i>and</i> led the charge in writing the
             frontend code.
           </h2>
-          <Detail
-            title="Technologies used"
-            text="Svelte, HTML, CSS, JavaScript, OpenAI, SvelteKit, Vercel, Google Chrome API"
-          ></Detail>
-          <Detail
-            title="Design tools used"
-            text="Figma, Adobe Illustrator"
-          ></Detail>
+          <div className="grid lg:grid-cols-2 gap:4 lg:gap-12">
+            <Detail
+              title="Technologies used"
+              text="Svelte, HTML, CSS, JavaScript, OpenAI, SvelteKit, Vercel, Google Chrome API"
+            ></Detail>
+            <Detail
+              title="Design tools used"
+              text="Figma, Adobe Illustrator"
+            ></Detail>
+          </div>
           <p>
             Watchdog was developed utilizing Svelte, a web framework that
             simplifies the creation of web applications using standard HTML/CSS
@@ -283,8 +281,8 @@ export default function Watchdog() {
             application was mobile responsive, enabling seamless browsing
             experiences for users on both mobile and desktop devices.
           </p>
-
-          <Overline text="My contributions"></Overline>
+        </Section>
+        <Section heading="My contributions">
           <h2>
             I employed my skills in design and development to achieve a
             successful hackathon project.
@@ -293,7 +291,7 @@ export default function Watchdog() {
             <div className="flex flex-row">
               <img
                 src="../case-studies/watchdog/devon_working.jpg"
-                className="rounded-xl rotate-3 w-1/2 object-cover"
+                className="rounded-xl rotate-2 w-1/2 object-cover"
               ></img>
               <img
                 src="../case-studies/watchdog/working.jpg"
@@ -338,12 +336,11 @@ export default function Watchdog() {
             Finally, I crafted the slide deck on Figma, incorporating graphic
             elements and prototype videos to complete the presentation.
           </p>
-
-          <Overline text="Reflection"></Overline>
+        </Section>
+        <Section heading="Reflection">
           <h2>
             Watchdog won the Best UI/UX Award and 2nd place at StormHacks 2023.
           </h2>
-
           <figure>
             <img
               src="../case-studies/watchdog/presenting.png"
@@ -355,7 +352,6 @@ export default function Watchdog() {
               Watchdog. From left to right: Ray, Matthew, Christina, and Devon.
             </figcaption>
           </figure>
-
           <p>
             Despite the time constraint of only twenty-four hours, our team
             fulfilled all the objectives we established in the beginning of the
@@ -380,7 +376,6 @@ export default function Watchdog() {
             accomplished. We take immense pride in winning 2nd place and the
             Best UI/UX Design award in StormHacks 2023!
           </p>
-
           <figure>
             <img
               src="../case-studies/watchdog/winners.png"
@@ -391,142 +386,94 @@ export default function Watchdog() {
               Matthew, Devon, Christina, and Ray.
             </figcaption>
           </figure>
-
-          <div className="pt-2">
-            <Disclosure defaultOpen={true}>
-              {({ open }) => (
-                <>
-                  <Disclosure.Button
-                    className="prose max-w-full prose-slate flex items-center w-full justify-between hover:bg-blue-50 border border-blue-500/18 hover:border-blue-500/30 transition-all font-medium rounded-md px-4 py-2 outline-none
-                  focus:outline-none focus-visible:ring focus-visible:ring-blue-500 focus-visible:ring-opacity-75"
-                  >
-                    <span className="text-blue-500">References</span>
-                    <ChevronUpIcon
-                      className={`${
-                        open ? "" : "rotate-180 transform"
-                      } h-6 w-6 text-blue-500`}
-                    />
-                  </Disclosure.Button>
-
-                  <Disclosure.Panel className="prose prose-slate">
-                    <ul>
-                      <li id="0">
-                        [0] T. Gerken, “Banks warn of big increase in online
-                        scams,”
-                        <i>BBC News</i>, para. 9–12, May 5, 2023. [Online],
-                        Available:{" "}
-                        <a href="https://www.bbc.com/news/technology-65486219https://www.bbc.com/news/technology-65486219">
-                          https://www.bbc.com/news/technology-65486219https://www.bbc.com/news/technology-65486219
-                        </a>
-                        . [Accessed June 30, 2023].
-                      </li>
-                      <li id="1">
-                        [1] Federal Trade Commission, “Who experiences scams? A
-                        story for all ages,” <i>Federal Trade Commission</i>,
-                        para. 2, December 8, 2022. [Online]. Available:{" "}
-                        <a href="https://www.ftc.gov/news-events/data-visualizations/data-spotlight/2022/12/who-experiences-scams-story-all-ages">
-                          https://www.ftc.gov/news-events/data-visualizations/data-spotlight/2022/12/who-experiences-scams-story-all-ages
-                        </a>
-                        . [Accessed June 30, 2023].
-                      </li>
-                      <li id="2">
-                        [2] Yonder Consulting, “Executive Summary Report: Online
-                        Scams & Fraud Research,” <i>Yonder Consulting</i>, p. 6,
-                        March 16, 2023. [Online]. Available:{" "}
-                        <a href="https://www.ofcom.org.uk/__data/assets/pdf_file/0025/255409/online-scams-and-fraud-summary-report.pdf">
-                          https://www.ofcom.org.uk/__data/assets/pdf_file/0025/255409/online-scams-and-fraud-summary-report.pdf
-                        </a>
-                        . [Accessed June 30, 2023].
-                      </li>
-                    </ul>
-                  </Disclosure.Panel>
-                </>
-              )}
-            </Disclosure>
-          </div>
-
-          <div className="pt-4">
-            <Disclosure defaultOpen={false}>
-              {({ open }) => (
-                <>
-                  <Disclosure.Button
-                    className="prose prose-slate max-w-full flex items-center w-full justify-between hover:bg-blue-50 border border-blue-500/18 hover:border-blue-500/30 transition-all font-medium rounded-md px-4 py-2 outline-none
-                  focus:outline-none focus-visible:ring focus-visible:ring-blue-500 focus-visible:ring-opacity-75"
-                  >
-                    <span className="text-blue-500">Resources</span>
-                    <ChevronUpIcon
-                      className={`${
-                        open ? "" : "rotate-180 transform"
-                      } h-6 w-6 text-blue-500`}
-                    />
-                  </Disclosure.Button>
-
-                  <Disclosure.Panel className="prose prose-slate">
-                    <ul>
-                      <li>
-                        [@freepik] on Freepik.{" "}
-                        <i>Cartoon pitbull puppies collection</i> [Vector].
-                        Freepik.{" "}
-                        <a href="https://www.freepik.com/free-vector/cartoon-pitbull-puppies-collection_14140588.htm#page=2&query=dog%20illustrations&position=36&from_view=search&track=ais ">
-                          https://www.freepik.com/free-vector/cartoon-pitbull-puppies-collection_14140588.htm#page=2&query=dog%20illustrations&position=36&from_view=search&track=ais
-                        </a>
-                        .
-                      </li>
-                      <li>
-                        [@freepik] on Freepik.{" "}
-                        <i>Free vector cartoon pitbull puppies collection</i>{" "}
-                        [Vector]. Freepik.{" "}
-                        <a href="https://www.freepik.com/free-vector/cartoon-pitbull-puppies-collection_14140614.htm#page=2&query=dog%20illustration&position=10&from_view=author  ">
-                          https://www.freepik.com/free-vector/cartoon-pitbull-puppies-collection_14140614.htm#page=2&query=dog%20illustration&position=10&from_view=author
-                        </a>
-                        .
-                      </li>
-                      <li>
-                        [@freepik] on Freepik.{" "}
-                        <i> Set of icons illusionist or magician theme</i>{" "}
-                        [Vector]. Freepik.{" "}
-                        <a href="https://www.freepik.com/free-vector/set-icons-illusionist-magician-theme_15128667.htm#query=magic%20doodle&position=22&from_view=search&track=ais">
-                          https://www.freepik.com/free-vector/set-icons-illusionist-magician-theme_15128667.htm#query=magic%20doodle&position=22&from_view=search&track=ais
-                        </a>
-                        .
-                      </li>
-                      <li>
-                        [@pikisuperstar] on Freepik.{" "}
-                        <i> Handdrawn retro computer windows element</i>{" "}
-                        [Vector]. Freepik.{" "}
-                        <a href="https://www.freepik.com/free-vector/hand-drawn-retro-computer-windows-element_41099709.htm#page=5&query=interface%20handdrawn&position=28&from_view=search&track=ais#position=28&page=5&query=interface%20handdrawn">
-                          https://www.freepik.com/free-vector/hand-drawn-retro-computer-windows-element_41099709.htm#page=5&query=interface%20handdrawn&position=28&from_view=search&track=ais#position=28&page=5&query=interface%20handdrawn
-                        </a>
-                        .
-                      </li>
-                    </ul>
-                  </Disclosure.Panel>
-                </>
-              )}
-            </Disclosure>
-          </div>
-
+        </Section>
+        <Section heading="Read my next case study">
           <a
-            href="/case-studies/chow-now"
-            className="mt-12 text-orange-500 rounded-xl outline-none prose
-            focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-75
-             flex-row items-center flex bg-orange-50/60 border border-orange-500/20 hover:bg-orange-200/30 transition no-underline p-4 md:p-0 md:px-8 gap-8 max-w-full"
+            href="../case-studies/chow-now"
+            className="no-underline prose prose-base  max-w-full flex flex-col px-8 pt-10 lg:px-12 lg:pt-12 rounded-3xl bg-orange-500 hover:bg-orange-600 transition justify-between"
           >
-            <div className="w-full lg:w-2/3">
-              <span className="prose-sm block mb-2">Read next case study</span>
-              <h2 className="text-orange-500">Chow Now</h2>
-              <span>
+            <div>
+              <h3 className="text-white">Chow Now</h3>
+              <p className="text-white leading-normal">
                 How might we offer victims of domestic violence a discreet way
                 to report incidents of abuse and facilitate their access to the
                 necessary aid?
-              </span>
+              </p>
             </div>
             <img
-              className="w-1/3 hidden md:block"
-              src="../case-studies/chow-now/chownow_button.png"
+              src="../case-studies/chow-now/chownow_header_no_bg.png"
+              className="w-full"
             ></img>
           </a>
-        </div>
+        </Section>
+        <Section heading="References and resources">
+          <ul className="prose prose-sm max-w-full">
+            <li id="0">
+              [0] T. Gerken, “Banks warn of big increase in online scams,”
+              <i>BBC News</i>, para. 9–12, May 5, 2023. [Online], Available:{" "}
+              <a href="https://www.bbc.com/news/technology-65486219https://www.bbc.com/news/technology-65486219">
+                https://www.bbc.com/news/technology-65486219https://www.bbc.com/news/technology-65486219
+              </a>
+              . [Accessed June 30, 2023].
+            </li>
+            <li id="1">
+              [1] Federal Trade Commission, “Who experiences scams? A story for
+              all ages,” <i>Federal Trade Commission</i>, para. 2, December 8,
+              2022. [Online]. Available:{" "}
+              <a href="https://www.ftc.gov/news-events/data-visualizations/data-spotlight/2022/12/who-experiences-scams-story-all-ages">
+                https://www.ftc.gov/news-events/data-visualizations/data-spotlight/2022/12/who-experiences-scams-story-all-ages
+              </a>
+              . [Accessed June 30, 2023].
+            </li>
+            <li id="2">
+              [2] Yonder Consulting, “Executive Summary Report: Online Scams &
+              Fraud Research,” <i>Yonder Consulting</i>, p. 6, March 16, 2023.
+              [Online]. Available:{" "}
+              <a href="https://www.ofcom.org.uk/__data/assets/pdf_file/0025/255409/online-scams-and-fraud-summary-report.pdf">
+                https://www.ofcom.org.uk/__data/assets/pdf_file/0025/255409/online-scams-and-fraud-summary-report.pdf
+              </a>
+              . [Accessed June 30, 2023].
+            </li>
+          </ul>
+
+          <ul className="prose prose-sm max-w-full">
+            <li>
+              [@freepik] on Freepik. <i>Cartoon pitbull puppies collection</i>{" "}
+              [Vector]. Freepik.{" "}
+              <a href="https://www.freepik.com/free-vector/cartoon-pitbull-puppies-collection_14140588.htm#page=2&query=dog%20illustrations&position=36&from_view=search&track=ais ">
+                https://www.freepik.com/free-vector/cartoon-pitbull-puppies-collection_14140588.htm#page=2&query=dog%20illustrations&position=36&from_view=search&track=ais
+              </a>
+              .
+            </li>
+            <li>
+              [@freepik] on Freepik.{" "}
+              <i>Free vector cartoon pitbull puppies collection</i> [Vector].
+              Freepik.{" "}
+              <a href="https://www.freepik.com/free-vector/cartoon-pitbull-puppies-collection_14140614.htm#page=2&query=dog%20illustration&position=10&from_view=author  ">
+                https://www.freepik.com/free-vector/cartoon-pitbull-puppies-collection_14140614.htm#page=2&query=dog%20illustration&position=10&from_view=author
+              </a>
+              .
+            </li>
+            <li>
+              [@freepik] on Freepik.{" "}
+              <i> Set of icons illusionist or magician theme</i> [Vector].
+              Freepik.{" "}
+              <a href="https://www.freepik.com/free-vector/set-icons-illusionist-magician-theme_15128667.htm#query=magic%20doodle&position=22&from_view=search&track=ais">
+                https://www.freepik.com/free-vector/set-icons-illusionist-magician-theme_15128667.htm#query=magic%20doodle&position=22&from_view=search&track=ais
+              </a>
+              .
+            </li>
+            <li>
+              [@pikisuperstar] on Freepik.{" "}
+              <i> Handdrawn retro computer windows element</i> [Vector].
+              Freepik.{" "}
+              <a href="https://www.freepik.com/free-vector/hand-drawn-retro-computer-windows-element_41099709.htm#page=5&query=interface%20handdrawn&position=28&from_view=search&track=ais#position=28&page=5&query=interface%20handdrawn">
+                https://www.freepik.com/free-vector/hand-drawn-retro-computer-windows-element_41099709.htm#page=5&query=interface%20handdrawn&position=28&from_view=search&track=ais#position=28&page=5&query=interface%20handdrawn
+              </a>
+              .
+            </li>
+          </ul>
+        </Section>
       </div>
     </article>
   );
