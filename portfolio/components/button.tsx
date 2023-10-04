@@ -26,5 +26,15 @@ export default function Button(props: Props) {
         {props.text}
       </a>
     );
+  } else if (props.hierarchy == "tertiary") {
+    return (
+      <a
+        href={props.link}
+        className="block text-center no-underline text-blue-600 w-fit rounded-md prose prose-base font-medium hover:text-blue-700 hover:underline hover:decoration-wavy transition
+        focus:outline-none focus-visible:ring focus-visible:ring-blue-500 focus-visible:ring-opacity-75"
+      >
+        {props.text}
+      </a>
+    );
   }
 }

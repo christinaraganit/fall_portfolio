@@ -12,17 +12,17 @@ p > a, li > a {
 
 /* width */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 10px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background:#dbeafe;
+  background:#bfdbfe;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background-color:#93c5fd;
+  background-color:#3b82f6;
   border-radius: 8px;
   transition-property: background-color;
   transition-duration: 0.5s;
@@ -30,7 +30,7 @@ p > a, li > a {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background-color:#60a5fa;
+  background-color:#2563eb;
 }
 
 /* 

@@ -2,21 +2,21 @@ import Button from "./button";
 
 export default function Contact() {
   return (
-    <div className="prose max-w-full bg-blue-50/30 px-20 py-8 flex flex-col items-center">
-      <p className="max-w-prose text-center font-medium lead leading-snug">
-        Interested in collaborating with me? Send me an email at
-        christinaraganit@gmail.com or connect with me on LinkedIn!
+    <div className="bg-blue-50/60 prose prose-base xl:prose-xl max-w-full py-8 lg:py-12 flex flex-col items-center px-8 md:px-16">
+      <p className="max-w-prose text-center font-medium leading-snug">
+        Let's make something cool together.<br></br>Send me an email or connect
+        with me on LinkedIn!
       </p>
-      <div className="flex flex-row gap-4">
+      <div className="inline-flex flex-wrap gap-4 items-center justify-center">
         <Button
           link="mailto:christinaraganit@gmail.com"
           hierarchy="primary"
           text="Email me"
         ></Button>
         <Button
-          link="#"
+          link="https://www.linkedin.com/in/christinaraganit/"
           hierarchy="secondary"
-          text="View my LinkedIn profile"
+          text="View my LinkedIn"
         ></Button>
       </div>
     </div>

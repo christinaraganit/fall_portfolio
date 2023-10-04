@@ -27,6 +27,7 @@ const config: Config = {
             },
             h2: {
               marginTop: '0.5rem',
+              marginBottom: '1rem',
             },
             h3: {
               marginTop: '0.5rem',
@@ -47,6 +48,7 @@ const config: Config = {
             },
             h2: {
               marginTop: '0.5rem',
+              marginBottom: '1.5rem',
             },
             h3: {
               marginTop: '0.5rem',
