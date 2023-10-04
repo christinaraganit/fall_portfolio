@@ -33,6 +33,14 @@ export default function Nav() {
         </li>
         <li>
           <a
+            className="relative block px-3 py-2 transition hover:text-blue-500"
+            href="/awards"
+          >
+            Awards
+          </a>
+        </li>
+        <li>
+          <a
             className="relative block px-3 py-2 transition text-blue-500 hover:text-blue-700"
             href="/"
           >

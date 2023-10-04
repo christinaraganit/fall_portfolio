@@ -6,20 +6,20 @@ interface Props {
 export default function Chip(props: Props) {
   if (props.color == "blue") {
     return (
-      <div className="text-blue-600 inline-block prose prose-sm lg:prose-base font-medium bg-white px-4 rounded-full py-1">
-        {props.text}
+      <div className="bg-blue-700 text-white inline-block text-sm font-medium px-3 rounded-full py-1">
+        <span className="text-sm">{props.text}</span>
       </div>
     );
   } else if (props.color == "orange") {
     return (
-      <div className="text-orange-500 inline-block prose prose-sm lg:prose-base font-medium bg-white px-4 rounded-full py-1">
-        {props.text}
+      <div className="bg-orange-600 inline-block text-sm font-medium text-white px-3 rounded-full py-1">
+        <span className="text-sm">{props.text}</span>
       </div>
     );
   } else if (props.color == "indigo") {
     return (
-      <div className="text-indigo-600 inline-block prose prose-sm lg:prose-base font-medium bg-white px-4 rounded-full py-1">
-        {props.text}
+      <div className="bg-indigo-700 inline-block text-sm font-medium text-white px-3 rounded-full py-1">
+        <span className="text-sm">{props.text}</span>
       </div>
     );
   }

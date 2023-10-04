@@ -4,9 +4,9 @@ import Chip from "@/components/chip";
 export default function Home() {
   return (
     <main className="max-w-full flex flex-col items-center">
-      <div className="max-w-4xl w-full flex gap-20 flex-col items-center">
+      <div className="max-w-5xl w-full flex gap-20 flex-col items-center">
         <div className="prose prose-base pt-12 md:pt-20 lg:pt-40">
-          <img src="headshot.jpg" className="w-20 h-20 rounded-full"></img>
+          <img src="headshot.jpg" className="w-16 h-16 rounded-full"></img>
 
           <Overline text="Enchanted to meet you!" color="blue"></Overline>
           <h1>I'm Christina Raganit.</h1>
@@ -31,7 +31,7 @@ export default function Home() {
           <div className="flex flex-col gap-4">
             <a
               href="/case-studies/watchdog"
-              className="no-underline prose prose-base  max-w-full flex flex-col gap-2 lg:gap-4 px-8 pt-10 lg:px-12 lg:pt-12 rounded-3xl bg-blue-600 hover:bg-blue-700 transition justify-between"
+              className="hover:scale-105 no-underline prose prose-base max-w-full flex flex-col gap-2 lg:gap-4 px-8 pt-10 lg:px-12 lg:pt-12 rounded-3xl bg-blue-600 hover:bg-blue-700 transition justify-between"
             >
               <div>
                 <h3 className="text-white">Watchdog</h3>

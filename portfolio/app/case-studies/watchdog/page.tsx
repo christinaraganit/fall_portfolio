@@ -9,7 +9,7 @@ import { ChevronUpIcon } from "@heroicons/react/20/solid";
 export default function Watchdog() {
   return (
     <article
-      className="prose prose-base  prose-slate max-w-full
+      className="prose prose-base prose-slate max-w-full
     gap-8 md:gap-16 lg:gap-24
     p-4 md:p-12 lg:py-24 lg:px-40 lg:pb-12 flex flex-col items-center"
     >
@@ -22,7 +22,7 @@ export default function Watchdog() {
 
       <div
         id="content"
-        className="max-w-full flex flex-col gap-8 md:gap-12 items-center"
+        className="max-w-5xl flex flex-col gap-8 md:gap-12 items-center"
       >
         <Section heading="Case study">
           <h1>Watchdog</h1>

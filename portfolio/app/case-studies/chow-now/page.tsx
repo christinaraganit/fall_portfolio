@@ -23,7 +23,7 @@ export default function ChowNow() {
 
       <div
         id="content"
-        className="max-w-6xl flex flex-col gap-8 md:gap-12 items-center"
+        className="max-w-4xl flex flex-col gap-8 md:gap-12 items-center"
       >
         <Section heading="Case study">
           <h1>Chow Now</h1>
