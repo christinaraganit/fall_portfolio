@@ -3,12 +3,13 @@ interface Props {
   date: string;
   awardedBy: string;
   type?: string;
+  project?: string;
 }
 
 export default function AwardCard(props: Props) {
   if (props.type == "school") {
     return (
-      <div className="p-4 rounded-2xl border border-slate-100">
+      <div className="p-4 rounded-2xl border border-slate-200/80">
         <div
           className="outline outline-1 outline-blue-100 outline-offset-4 shadow-blue-100
         shadow-lg w-12 h-12 flex items-center justify-center bg-blue-500 rounded-full"
@@ -40,7 +41,7 @@ export default function AwardCard(props: Props) {
     );
   } else {
     return (
-      <div className="p-4 rounded-2xl border border-slate-100">
+      <div className="p-4 rounded-2xl border border-slate-200/80">
         <div
           className="outline outline-1 outline-amber-100 outline-offset-4 shadow-amber-100
         shadow-lg w-12 h-12 flex items-center justify-center bg-amber-500 rounded-full"
@@ -66,7 +67,7 @@ export default function AwardCard(props: Props) {
         </span>
         <span className="block font-semibold mb-2">{props.award}</span>
         <span className="block text-slate-500 text-sm">
-          Awarded by {props.awardedBy}
+          Awarded to project {props.project} by {props.awardedBy}
         </span>
       </div>
     );

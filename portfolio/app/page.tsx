@@ -13,25 +13,11 @@ export default function Home() {
         <Overline text="Welcome to the portfolio of" color="blue"></Overline>
         <h1>Christina Raganit, User Experience Designer</h1>
         <p className="lead">
-          Hi, Christina here! I leverage my background in software development
-          and visual design to craft design systems that scale and digital
-          experiences that users delight in.
+          I am a designer-developer powerhouse who has a deep adoration for design systems and is well-versed in UI design, UX research, and frontend development.
         </p>
       </div>
 
       <div className="flex flex-col gap-4 md:gap-8 lg:gap-12 items-center">
-        <div className="max-w-prose prose prose-base ">
-          <Overline text="Projects" color="blue"></Overline>
-          <h2>
-            I craft thoughtful, purposeful, and user-centric design solutions.
-          </h2>
-          <p>
-            I am driven by a passion for creating products that make a tangible
-            difference in users' lives. Armed with data-driven insights, my
-            ultimate goal is to deliver technically-feasible designs that meet
-            user needs and align with business objectives.
-          </p>
-        </div>
         <div className="max-w-full grid lg:grid-cols-2 gap-4 lg:gap-8">
           <a
             href="/case-studies/watchdog"
@@ -59,7 +45,7 @@ export default function Home() {
 
           <a
             href="case-studies/chow-now"
-            className="no-underline prose prose-base  max-w-full flex flex-col gap-2 lg:gap-4 px-8 pt-10 lg:px-12 lg:pt-12 rounded-3xl bg-orange-500 hover:bg-orange-600 transition justify-between"
+            className="no-underline prose prose-base max-w-full flex flex-col gap-2 lg:gap-4 px-8 pt-10 lg:px-12 lg:pt-12 rounded-3xl bg-orange-500 hover:bg-orange-600 transition justify-between"
           >
             <div>
               <h3 className="text-white">Chow Now</h3>

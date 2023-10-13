@@ -4,7 +4,7 @@ export default function About() {
   return (
     <main className="max-w-full flex flex-col items-center">
       <div className="max-w-5xl w-full flex gap-20 flex-col items-center">
-        <div className="grid gap-12 lg:gap-16 lg:grid-cols-2 p-4 pt-12 md:pt-20 lg:pt-40">
+        <div className="grid gap-12 lg:gap-16 lg:grid-cols-2 p-8 pt-12 md:pt-20 lg:pt-40">
           <section className="prose prose-base">
             <div className="block lg:hidden">
               <Overline color="blue" text="About me"></Overline>
@@ -12,7 +12,7 @@ export default function About() {
             </div>
             <img
               src="../me_in_italy.JPG"
-              className="not-prose rounded-xl mb-8"
+              className="not-prose rounded-xl mb-8 -rotate-1"
             ></img>
 
             <a
@@ -61,7 +61,7 @@ export default function About() {
               <span className="ml-2">View my DevPost</span>
             </a>
 
-            <div className="mt-2 mb-5 border-b border-slate-100 pb-4"></div>
+            <div className="mt-2 mb-5 border-b border-slate-200/80 pb-4"></div>
 
             <a
               href="mailto:christinaraganit@gmail.com"
@@ -99,7 +99,7 @@ export default function About() {
               blink-182 songs.
             </p>
 
-            <div className="not-prose rounded-2xl border border-slate-100 p-4 mb-4">
+            <div className="not-prose rounded-2xl border border-slate-200/80 p-8 mb-4">
               <h2 className="flex text-sm font-semibold text-slate-700 items-center gap-2">
                 Skills
               </h2>
@@ -110,7 +110,7 @@ export default function About() {
               </p>
             </div>
 
-            <div className="not-prose rounded-2xl border border-slate-100 p-4 mb-4">
+            <div className="not-prose rounded-2xl border border-slate-200/80 p-4 mb-4">
               <h2 className="flex text-sm font-semibold text-slate-700 items-center gap-2">
                 Design tools
               </h2>
@@ -120,7 +120,7 @@ export default function About() {
               </p>
             </div>
 
-            <div className="not-prose rounded-2xl border border-slate-100 mb-4 p-4">
+            <div className="not-prose rounded-2xl border border-slate-200/80 mb-4 p-4">
               <h2 className="flex text-sm font-semibold text-slate-700 items-center gap-2">
                 Languages and frameworks
               </h2>
@@ -130,7 +130,7 @@ export default function About() {
               </p>
             </div>
 
-            <div className="not-prose rounded-2xl border border-slate-100 p-4">
+            <div className="not-prose rounded-2xl border border-slate-200/80 p-4">
               <h2 className="flex text-sm font-semibold text-slate-700 items-center gap-2">
                 Organization tools
               </h2>
