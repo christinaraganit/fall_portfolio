@@ -4,7 +4,7 @@ export default function About() {
   return (
     <main className="max-w-full flex flex-col items-center">
       <div className="max-w-5xl w-full flex gap-20 flex-col items-center">
-        <div className="grid gap-12 lg:gap-16 lg:grid-cols-2 p-8 pt-12 md:pt-20 lg:pt-40">
+        <div className="grid gap-12 lg:gap-16 lg:grid-cols-2 p-8 pt-20 lg:pt-40">
           <section className="prose prose-base">
             <div className="block lg:hidden">
               <Overline color="blue" text="About me"></Overline>
@@ -99,7 +99,7 @@ export default function About() {
               blink-182 songs.
             </p>
 
-            <div className="not-prose rounded-2xl border border-slate-200/80 p-8 mb-4">
+            <div className="not-prose rounded-2xl border border-slate-200/80 p-4   mb-4">
               <h2 className="flex text-sm font-semibold text-slate-700 items-center gap-2">
                 Skills
               </h2>

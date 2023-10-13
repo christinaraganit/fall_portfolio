@@ -3,7 +3,7 @@ import Overline from "@/components/overline"
 export default function Projects() {
     return (<main className="max-w-full flex flex-col items-center">
     <div className="max-w-5xl w-full flex gap-12 flex-col">
-      <div className="prose prose-base p-8 pt-12 md:pt-20 lg:pt-40">
+      <div className="prose prose-base p-8 p-8 pt-20 lg:pt-40">
         <Overline color="blue" text="Projects"></Overline>
         <h1>Crafting thoughtful, purposeful, and user-centric design solutions.</h1>
         <p className="">

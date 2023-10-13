@@ -5,7 +5,7 @@ export default function Awards() {
   return (
     <main className="max-w-full flex flex-col items-center">
       <div className="max-w-5xl w-full flex flex-col">
-        <div className="prose prose-base p-8 pt-20 md:pt-20 lg:pt-40">
+        <div className="prose prose-base p-8 pt-20 lg:pt-40">
           <Overline color="blue" text="Awards"></Overline>
           <h1>Celebrating moments of excellence.</h1>
           <p className="">
