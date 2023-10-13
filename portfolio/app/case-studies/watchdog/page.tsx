@@ -1,6 +1,7 @@
 "use client";
 
 import Detail from "@/components/case-studies/detail";
+import Divider from "@/components/divider";
 import Overline from "@/components/overline";
 import Section from "@/components/section";
 import { Disclosure } from "@headlessui/react";
@@ -249,6 +250,7 @@ export default function Watchdog() {
             and protection.
           </p>
         </Section>
+        <Divider></Divider>
         <Section heading="Technical implementation">
           <h2>
             I spearheaded the design <i>and</i> led the charge in writing the

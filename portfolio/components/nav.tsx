@@ -10,7 +10,7 @@ export default function Nav() {
     <>
       <nav
         id="navigation"
-        className="fixed top-4 my-8 pointer-events-auto hidden md:block"
+        className="fixed top-4 my-8 pointer-events-auto hidden md:block z-20"
       >
         <ul className="flex w-fit rounded-full bg-white/90 px-3 text-sm font-medium text-slate-800 shadow-lg shadow-slate-800/5 ring-1 ring-zinc-900/5 backdrop-blur">
           <li>
@@ -48,14 +48,14 @@ export default function Nav() {
           <li>
             <a
               className="relative block px-3 py-2 transition text-blue-500 hover:text-blue-700"
-              href="/"
+              href="https://drive.google.com/file/d/1ii2QdqWnneSKMQNJNmThxrUyXNA1khl7/view?usp=sharing"
             >
               Resume
             </a>
           </li>
         </ul>
       </nav>
-      <nav className="fixed block top-8 right-8 pointer-events-auto md:hidden">
+      <nav className="fixed block top-8 right-8 pointer-events-auto md:hidden z-20">
         <button
           className="group flex flex w-fit rounded-full bg-white/90 px-4 py-2 text-sm font-medium text-slate-800 shadow-lg shadow-slate-800/5 ring-1 ring-zinc-900/5 backdrop-blur"
           onClick={() => setModalOpen(true)}
@@ -105,7 +105,7 @@ export default function Nav() {
               <li>
                 <a
                   className="relative block px-3 py-2 transition hover:text-blue-700"
-                  href="/"
+                  href="https://drive.google.com/file/d/1ii2QdqWnneSKMQNJNmThxrUyXNA1khl7/view?usp=sharing"
                 >
                   Resume
                 </a>

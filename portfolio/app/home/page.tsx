@@ -9,11 +9,11 @@ export default function Home() {
           <img src="headshot.jpg" className="w-16 h-16 rounded-full"></img>
 
           <Overline text="Enchanted to meet you!" color="blue"></Overline>
-          <h1>I'm Christina Raganit.</h1>
+          <h1>I'm Christina Raganit, a user experience designer</h1>
           <p className="lead">
-            As a user experience designer, I leverage my background in software
-            development and visual design to craft design systems that scale and
-            digital experiences that users delight in.
+            I'm a Vancouver-based designer-developer powerhouse who has a deep
+            adoration for design systems and is well-versed in UI design, UX
+            research, and frontend development.
           </p>
         </div>
         <div className="prose prose-base">

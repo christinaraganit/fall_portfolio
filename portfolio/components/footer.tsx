@@ -29,7 +29,7 @@ export default function Footer() {
           </a>
           <a
             className="relative block font-medium transition text-blue-500 hover:text-blue-700"
-            href="/"
+            href="https://drive.google.com/file/d/1ii2QdqWnneSKMQNJNmThxrUyXNA1khl7/view?usp=sharing"
           >
             Resume
           </a>
