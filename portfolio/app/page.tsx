@@ -7,13 +7,15 @@ export default function Home() {
     <main
       className="flex flex-col items-center
       gap-8 md:gap-16 lg:gap-24
-    p-4 md:p-12 lg:py-24 lg:px-40"
+    p-8 pt-20 md:p-12 lg:py-24 lg:px-40"
     >
       <div className="prose prose-base pt-12 md:pt-20">
         <Overline text="Welcome to the portfolio of" color="blue"></Overline>
         <h1>Christina Raganit, User Experience Designer</h1>
         <p className="lead">
-          I am a designer-developer powerhouse who has a deep adoration for design systems and is well-versed in UI design, UX research, and frontend development.
+          I am a designer-developer powerhouse who has a deep adoration for
+          design systems and is well-versed in UI design, UX research, and
+          frontend development.
         </p>
       </div>
 
