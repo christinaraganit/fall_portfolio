@@ -1,22 +1,23 @@
-import Overline from "@/components/overline"
+import Overline from "@/components/overline";
+import Page from "@/components/page";
+import ProjectCard from "@/components/project-card";
+import { Colors } from "@/components/colors";
+import { ProjectCardColors } from "@/components/colors";
 
 export default function Projects() {
-    return (<main className="max-w-full flex flex-col items-center">
-    <div className="max-w-5xl w-full flex gap-12 flex-col">
-      <div className="prose prose-base p-8 p-8 pt-20 lg:pt-40">
-        <Overline color="blue" text="Projects"></Overline>
-        <h1>Crafting thoughtful, purposeful, and user-centric design solutions.</h1>
-        <p className="">
-          In my design journey, I am driven by a passion for creating products
-          that make a tangible difference in users' lives. Armed with research and
-          data-driven insights, my ultimate goal is to deliver
-          technically feasible designs that meet user needs and comply with
-          software requirements.
-        </p>
-      </div>
-      <div className="p-8 grid gap-4 md:grid-cols-2 lg:gap-6 lg:grid-cols-3">
-       
-      </div>
-    </div>
-  </main>)
+  return (
+    <Page
+      title="Projects"
+      heading="I craft thoughtful and user-centric design solutions."
+      paragraph="Armed with research and data-driven insights, I deliver technically-feasible design solutions that meet user needs and comply with software requirements."
+    >
+      <ProjectCard
+        title="Watchdog"
+        link="/watchdog"
+        description="How might we develop a digital solution that safeguards individuals of all ages, ensuring their protection aggainst fraudulent activities online?"
+        color={ProjectCardColors.BLUE}
+        img="../case-studies/watchdog/watchdog_preview.png"
+      ></ProjectCard>
+    </Page>
+  );
 }
