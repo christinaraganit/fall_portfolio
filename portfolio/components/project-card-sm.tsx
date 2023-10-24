@@ -76,8 +76,8 @@ export default function SmallProjectCard(props: Props) {
         href={props.link}
       >
         <div
-          className="outline outline-1 outline-emerald-100 outline-offset-4 shadow-emerald-100
-shadow-lg w-12 h-12 flex items-center justify-center bg-emerald-500 rounded-full"
+          className="outline outline-1 outline-indigo-100 outline-offset-4 shadow-indigo-100
+shadow-lg w-12 h-12 flex items-center justify-center bg-indigo-500 rounded-full"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
