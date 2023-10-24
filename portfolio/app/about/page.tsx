@@ -4,7 +4,7 @@ import Page from "@/components/page";
 export default function About() {
   return (
     <Page title="About">
-      <div className="grid gap-12 lg:gap-16 lg:grid-cols-2 pt-40">
+      <div className="grid gap-12 lg:gap-16 lg:grid-cols-2">
         <section className="prose prose-base">
           <div className="block lg:hidden">
             <Overline color="blue" text="About me"></Overline>

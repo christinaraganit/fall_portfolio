@@ -6,7 +6,8 @@
   box-sizing: border-box;
 }
 
-p > a, li > a {
+p > a,
+li > a {
   word-break: break-all;
 }
 

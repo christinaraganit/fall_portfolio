@@ -15,13 +15,24 @@ export default function Home() {
           description="How might we develop a digital solution that safeguards individuals of all ages, ensuring their protection aggainst fraudulent activities online?"
           color={ProjectCardColors.BLUE}
           img="../case-studies/watchdog/watchdog_preview.png"
+          chips={[
+            "Hackathon Winner",
+            "Interaction Design",
+            "Frontend Developer",
+          ]}
         ></ProjectCard>
         <ProjectCard
           title="Chow Now"
           link="/case-studies/chow-now"
           description="How might we offer victims of domestic violence a discreet way to report incidents of abuse and facilitate their access to the necessary aid?"
           color={ProjectCardColors.ORANGE}
-          img="../case-studies/watchdog/watchdog_preview.png"
+          img="../case-studies/chow-now/chownow_preview.png"
+          chips={[
+            "Hackathon Winner",
+            "Frontend Developer",
+            "Interaction Design",
+            "UX Research",
+          ]}
         ></ProjectCard>
         <ProjectCard
           title="Proud Zebra"
@@ -29,6 +40,7 @@ export default function Home() {
           description="How might we transform Proud Zebra's storytelling experience into a digital solution that empowers the LGBTQ+ community, drives engagement and fosters a sense of brand loyalty?"
           color={ProjectCardColors.INDIGO}
           img="../case-studies/watchdog/watchdog_preview.png"
+          chips={["Hackathon Winner", "Interaction Design"]}
         ></ProjectCard>
       </div>
     </Page>
