@@ -11,6 +11,12 @@ export default function Awards() {
     >
       <div className="grid gap-4 sm:grid-cols-2 lg:gap-6 lg:grid-cols-3">
         <AwardCard
+          award="Nancy Morrison and Fraser Green Special Abilities Award"
+          awardedBy="Simon Fraser University"
+          date="October 2023"
+          type="school"
+        ></AwardCard>
+        <AwardCard
           award="Undergraduate Open Scholarship"
           awardedBy="Simon Fraser University"
           date="Sep 2023"
