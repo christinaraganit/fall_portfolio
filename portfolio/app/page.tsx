@@ -8,13 +8,13 @@ import { ProjectCardColors } from "@/components/colors";
 export default function Home() {
   return (
     <Page title="Home">
-      <div className="grid grid-cols-1 gap-4 mt-8">
+      <div className="grid grid-cols-1 gap-4">
         <ProjectCard
           title="Watchdog"
           link="/case-studies/watchdog"
           description="How might we develop a digital solution that safeguards individuals of all ages, ensuring their protection aggainst fraudulent activities online?"
           color={ProjectCardColors.BLUE}
-          img="../case-studies/watchdog/watchdog_preview.png"
+          img="../case-studies/watchdog/watchdog_preview_desktop.png"
           chips={[
             "Hackathon Winner",
             "Interaction Design",
@@ -39,7 +39,7 @@ export default function Home() {
           link="/case-studies/proud-zebra"
           description="How might we transform Proud Zebra's storytelling experience into a digital solution that empowers the LGBTQ+ community, drives engagement and fosters a sense of brand loyalty?"
           color={ProjectCardColors.INDIGO}
-          img="../case-studies/watchdog/watchdog_preview.png"
+          img="../case-studies/proud-zebra/proudzebra_preview.png"
           chips={["Hackathon Winner", "Interaction Design"]}
         ></ProjectCard>
       </div>

@@ -9,7 +9,7 @@ export default function Awards() {
       heading="Celebrating moments of excellence."
       paragraph="Over the years, I've had the pleasure of earning accolades for my academic achievements and have been fortunate to receive recognition for my talents in both design and development."
     >
-      <div className="grid gap-4 sm:grid-cols-2 lg:gap-6 lg:grid-cols-3">
+      <div className="grid gap-4 sm:grid-cols-2 lg:gap-6 lg:grid-cols-4">
         <AwardCard
           award="Nancy Morrison and Fraser Green Special Abilities Award"
           awardedBy="Simon Fraser University"

@@ -61,7 +61,7 @@ export default function About() {
             <span className="ml-2">View my DevPost</span>
           </a>
 
-          <div className="mt-2 mb-5 border-b border-slate-200/80 pb-4"></div>
+          <div className="mt-1 mb-4 border-b border-slate-200/80 pb-4"></div>
 
           <a
             href="mailto:christinaraganit@gmail.com"
@@ -98,45 +98,6 @@ export default function About() {
             Teamfight Tactics, and delight in the basslines of my favorite
             blink-182 songs.
           </p>
-
-          <div className="not-prose rounded-2xl border border-slate-200/80 p-4 mb-4">
-            <h2 className="flex text-sm font-semibold text-slate-700 items-center gap-2">
-              Skills
-            </h2>
-            <p className="mt-2 text-slate-700">
-              User Interface Design, User Experience Research, Design Systems,
-              Interaction Design, Prototyping, Wireframing, Frontend
-              Development, Design Thinking
-            </p>
-          </div>
-
-          <div className="not-prose rounded-2xl border border-slate-200/80 p-4 mb-4">
-            <h2 className="flex text-sm font-semibold text-slate-700 items-center gap-2">
-              Design tools
-            </h2>
-            <p className="mt-2  text-slate-700">
-              Figma, Adobe XD, Adobe Photoshop, Adobe Illustrator, Adobe Animate
-            </p>
-          </div>
-
-          <div className="not-prose rounded-2xl border border-slate-200/80 mb-4 p-4">
-            <h2 className="flex text-sm font-semibold text-slate-700 items-center gap-2">
-              Languages and frameworks
-            </h2>
-            <p className="mt-2  text-slate-700">
-              HTML, CSS, JavaScript, React, Next.js, Tailwind, Java, Python,
-              Svelte
-            </p>
-          </div>
-
-          <div className="not-prose rounded-2xl border border-slate-200/80 p-4">
-            <h2 className="flex text-sm font-semibold text-slate-700 items-center gap-2">
-              Organization tools
-            </h2>
-            <p className="mt-2 text-slate-700">
-              GitHub, JIRA, Confluence, Google Workspace, Microsoft Office
-            </p>
-          </div>
         </section>
       </div>
     </Page>

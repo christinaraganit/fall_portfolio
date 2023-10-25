@@ -16,8 +16,8 @@ export default function Watchdog() {
     >
       <section id="image" className="flex justify-center mt-20 lg:mt-0">
         <img
-          src="../case-studies/watchdog/watchdog_header.png"
-          className="max-w-full rounded-xl"
+          src="../case-studies/watchdog/watchdog_header_desktop.png"
+          className="max-w-full md:w-1/2 rounded-xl"
         ></img>
       </section>
 
