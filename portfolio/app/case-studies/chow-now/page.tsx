@@ -29,7 +29,7 @@ export default function ChowNow() {
         ></img>
       </section>
 
-      <div className="p-6 flex flex-col lg:px-12">
+      <div className="p-6 flex flex-col lg:px-12 gap-6">
         <div>
           <Overline color="orange" text="Project overview"></Overline>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 lg:gap-12">
@@ -175,7 +175,7 @@ export default function ChowNow() {
               ></img>
             </div>
 
-            <div className="items-center flex flex-col xl:items-start">
+            <div>
               <div className="max-w-prose w-prose">
                 <h3 className="mt-4">
                   Guiding users with a comprehensive onboarding flow
@@ -202,7 +202,7 @@ export default function ChowNow() {
               ></img>
             </div>
 
-            <div className="items-center flex flex-col xl:items-start">
+            <div>
               <div className="max-w-prose w-prose">
                 <h3 className="mt-4">
                   Enhancing the efficiency of reporting incidents with location
@@ -226,7 +226,7 @@ export default function ChowNow() {
               ></img>
             </div>
 
-            <div className="items-center flex flex-col xl:items-start">
+            <div>
               <div className="max-w-prose w-prose">
                 <h3 className="mt-4">
                   Assisting users in preparing for emergencies by including
@@ -252,7 +252,7 @@ export default function ChowNow() {
               ></img>
             </div>
 
-            <div className="items-center flex flex-col xl:items-start">
+            <div>
               <div className="max-w-prose w-prose">
                 <h3 className="mt-4">
                   Facilitating the ability to report incidents of domestic
@@ -279,7 +279,7 @@ export default function ChowNow() {
               ></img>
             </div>
 
-            <div className="items-center flex flex-col xl:items-start">
+            <div>
               <div className="max-w-prose w-prose">
                 <h3 className="mt-4">
                   Providing discretion by allowing toggling between different
@@ -307,7 +307,7 @@ export default function ChowNow() {
 
           <img
             src="../case-studies/chow-now/chownow_brand.png"
-            className="rounded-xl not-prose mb-4"
+            className="rounded-xl not-prose"
           ></img>
         </div>
 
@@ -375,15 +375,15 @@ export default function ChowNow() {
             </div>
           </div>
 
-          <div className="grid lg:grid-cols-2 lg:gap-12">
+          <div className="grid lg:grid-cols-2 lg:gap-12 pt-6">
             <div className="max-w-prose w-prose">
               <Overline
                 color="orange"
                 text="Technical implementation"
               ></Overline>
               <h2>
-                I spearheaded the design <i>and</i> led the charge in writing
-                the frontend code.
+                I spearheaded the design efforts <i>and</i> led the charge in
+                writing the frontend code.
               </h2>
               <Detail
                 title="Technologies used"
@@ -472,7 +472,7 @@ export default function ChowNow() {
                 presentation deck on Figma, incorporating graphic elements and
                 prototype videos to complete the presentation.
               </p>
-              <p className="my-0">
+              <p>
                 Next, I wrote code for the frontend of the application using
                 React Native. Being new to React Native, I faced significant
                 challenges. I dedicated four hours to changing the font, but to
@@ -525,7 +525,7 @@ export default function ChowNow() {
                 were 1.7× more likely to experience intimate partner violence
                 compared to cisgender individuals <a href="#8">[8]</a>.
               </p>
-              <p className="my-0">
+              <p>
                 Motivated to take action, I teamed up with Eunsaem Lee to
                 address this issue in cmd-f 2023. After enduring 23 hours of
                 continuous design, coding, and development with minimal sleep, I
@@ -688,11 +688,11 @@ export default function ChowNow() {
           <div className="flex flex-col items-center mt-8">
             <div className="max-w-4xl lg:px-6">
               <ProjectCard
-                title="Proud Zebra"
-                link="/case-studies/proud-zebra"
-                description="How might we transform Proud Zebra's storytelling experience into a digital solution that empowers the LGBTQ+ community, drives engagement, and fosters a sense of brand loyalty?"
-                color={ProjectCardColors.INDIGO}
-                img="../case-studies/proud-zebra/proudzebra_header_desktop.png"
+                title="Watchdog"
+                link="/case-studies/watchdog"
+                description="How might we develop a digital solution that safeguards individuals of all ages, ensuring their protection against fraudulent activities online?"
+                color={ProjectCardColors.BLUE}
+                img="../case-studies/watchdog/watchdog_header_desktop.png"
                 chips={[
                   "Hackathon Winner",
                   "Frontend Developer",

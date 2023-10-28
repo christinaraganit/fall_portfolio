@@ -25,7 +25,7 @@ export default function ProjectCard(props: Props) {
         >
           <img
             src={img}
-            className="w-full mb-6 md:mb-0 w-3/4 lg:w-1/2 not-prose"
+            className="w-full mb-6 md:mb-0 w-3/4 md:w-1/2 not-prose"
           ></img>
           <div className="pr-2 prose prose-invert w-full">
             <span className="block prose-sm text-white">Up next</span>
