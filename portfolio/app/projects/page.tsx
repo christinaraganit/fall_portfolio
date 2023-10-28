@@ -1,6 +1,8 @@
 "use client";
 import Page from "@/components/page";
 import SmallProjectCard from "@/components/project-card-sm";
+import ProjectCard from "@/components/project-card";
+import { ProjectCardColors } from "@/components/colors";
 
 export default function Projects() {
   return (
@@ -9,21 +11,45 @@ export default function Projects() {
       heading="I craft thoughtful and user-centric design solutions."
       paragraph="Armed with research and data-driven insights, I deliver technically-feasible design solutions that meet user needs and comply with software requirements."
     >
-      <div className="grid gap-4 sm:grid-cols-2 lg:gap-6 lg:grid-cols-3">
-        <SmallProjectCard
-          title="Watchdog"
-          description="A Chrome extension and web application created with Svelte that uses AI to identify misinformation and online scams. Submitted for StormHacks 2023."
-          link="https://devpost.com/software/watchdog-exrdgn"
-          linkPreview="View on DevPost"
-          date="Jun 2023"
-        ></SmallProjectCard>
-        <SmallProjectCard
+      <div className="grid grid-cols-1 gap-4 mb-8">
+        <ProjectCard
+          title="Proud Zebra"
+          link="/case-studies/proud-zebra"
+          description="How might we transform Proud Zebra's storytelling experience into a digital solution that empowers the LGBTQ+ community, drives engagement and fosters a sense of brand loyalty?"
+          color={ProjectCardColors.INDIGO}
+          img="../case-studies/proud-zebra/proudzebra_header_desktop.png"
+          chips={["Hackathon Winner", "Interaction Designer", "UX Researcher"]}
+        ></ProjectCard>
+
+        <ProjectCard
           title="Chow Now"
-          description="A React Native application disguised as a takeout application that provides victims of domestic violence with a means of discreetly reporting incidents of abuse. Submitted for cmd-f 2023."
-          link="https://devpost.com/software/chow-now "
-          linkPreview="View on DevPost"
-          date="Mar 2023"
-        ></SmallProjectCard>
+          link="/case-studies/chow-now"
+          description="How might we offer victims of domestic violence a discreet way to report incidents of abuse and facilitate their access to the necessary aid?"
+          color={ProjectCardColors.ORANGE}
+          img="../case-studies/chow-now/chownow_header_desktop.png"
+          chips={[
+            "Hackathon Winner",
+            "Frontend Developer",
+            "Interaction Designer",
+            "UX Researcher",
+          ]}
+        ></ProjectCard>
+
+        <ProjectCard
+          title="Watchdog"
+          link="/case-studies/watchdog"
+          description="How might we develop a digital solution that safeguards individuals of all ages, ensuring their protection against fraudulent activities online?"
+          color={ProjectCardColors.BLUE}
+          img="../case-studies/watchdog/watchdog_header_desktop.png"
+          chips={[
+            "Hackathon Winner",
+            "Interaction Designer",
+            "Frontend Developer",
+          ]}
+        ></ProjectCard>
+      </div>
+
+      <div className="grid gap-4 sm:grid-cols-2 lg:gap-6 lg:grid-cols-3">
         <SmallProjectCard
           title="Misfortune Cookie"
           description="A web application created with Svelte that lets you open a fortune cookie with a realistic fortune. Submitted for SystemHacks 2023."

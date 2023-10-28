@@ -10,37 +10,39 @@ export default function Home() {
     <Page title="Home">
       <div className="grid grid-cols-1 gap-4">
         <ProjectCard
-          title="Watchdog"
-          link="/case-studies/watchdog"
-          description="How might we develop a digital solution that safeguards individuals of all ages, ensuring their protection aggainst fraudulent activities online?"
-          color={ProjectCardColors.BLUE}
-          img="../case-studies/watchdog/watchdog_preview_desktop.png"
-          chips={[
-            "Hackathon Winner",
-            "Interaction Design",
-            "Frontend Developer",
-          ]}
+          title="Proud Zebra"
+          link="/case-studies/proud-zebra"
+          description="How might we transform Proud Zebra's storytelling experience into a digital solution that empowers the LGBTQ+ community, drives engagement and fosters a sense of brand loyalty?"
+          color={ProjectCardColors.INDIGO}
+          img="../case-studies/proud-zebra/proudzebra_header_desktop.png"
+          chips={["Hackathon Winner", "Interaction Designer", "UX Researcher"]}
         ></ProjectCard>
+
         <ProjectCard
           title="Chow Now"
           link="/case-studies/chow-now"
           description="How might we offer victims of domestic violence a discreet way to report incidents of abuse and facilitate their access to the necessary aid?"
           color={ProjectCardColors.ORANGE}
-          img="../case-studies/chow-now/chownow_preview.png"
+          img="../case-studies/chow-now/chownow_header_desktop.png"
           chips={[
             "Hackathon Winner",
             "Frontend Developer",
-            "Interaction Design",
-            "UX Research",
+            "Interaction Designer",
+            "UX Researcher",
           ]}
         ></ProjectCard>
+
         <ProjectCard
-          title="Proud Zebra"
-          link="/case-studies/proud-zebra"
-          description="How might we transform Proud Zebra's storytelling experience into a digital solution that empowers the LGBTQ+ community, drives engagement and fosters a sense of brand loyalty?"
-          color={ProjectCardColors.INDIGO}
-          img="../case-studies/proud-zebra/proudzebra_preview.png"
-          chips={["Hackathon Winner", "Interaction Design"]}
+          title="Watchdog"
+          link="/case-studies/watchdog"
+          description="How might we develop a digital solution that safeguards individuals of all ages, ensuring their protection against fraudulent activities online?"
+          color={ProjectCardColors.BLUE}
+          img="../case-studies/watchdog/watchdog_header_desktop.png"
+          chips={[
+            "Hackathon Winner",
+            "Interaction Designer",
+            "Frontend Developer",
+          ]}
         ></ProjectCard>
       </div>
     </Page>

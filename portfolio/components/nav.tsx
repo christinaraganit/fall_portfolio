@@ -11,7 +11,7 @@ export default function Nav() {
     <>
       <nav
         id="navigation"
-        className="fixed top-4 my-8 pointer-events-auto hidden md:block z-20"
+        className="fixed top-4 my-8 pointer-events-auto hidden lg:block z-20"
       >
         <ul className="flex w-fit rounded-full bg-white/80 px-3 text-sm font-medium text-slate-800 shadow-lg shadow-slate-800/5 ring-1 ring-zinc-900/5 backdrop-blur">
           <li>
@@ -56,7 +56,7 @@ export default function Nav() {
           </li>
         </ul>
       </nav>
-      <nav className="fixed block top-6 right-6 pointer-events-auto md:hidden z-20">
+      <nav className="fixed block top-6 right-6 pointer-events-auto lg:hidden z-20">
         <button
           className="group flex flex w-fit rounded-full bg-white/80 px-4 py-2 text-sm font-medium
         text-slate-700 shadow-lg shadow-slate-800/5 ring-1 ring-zinc-900/5 backdrop-blur gap-1.5"

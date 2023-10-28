@@ -21,11 +21,15 @@ export default function ProjectCard(props: Props) {
     return (
       <a href={link} className="no-underline">
         <div
-          className={`${bg} ${bgHover} flex items-center md:items-end gap-0 md:gap-6 flex-col-reverse md:flex-row rounded-xl p-6 pb-0 md:pr-8 hover:scale-105 transition-colors transition-transform`}
+          className={`${bg} ${bgHover} flex items-center md:items-center gap-0 md:gap-6 flex-col md:flex-row rounded-2xl p-6 md:pr-8 hover:scale-105 transition-colors transition-transform`}
         >
-          <img src={img} className="w-full md:w-1/3 pt-2 not-prose"></img>
-          <div className="pr-2 prose prose-invert w-full md:pb-6">
-            <h2 className="no-underline mt-2 mb-4">{title}</h2>
+          <img
+            src={img}
+            className="w-full mb-6 md:mb-0 md:w-1/2 not-prose"
+          ></img>
+          <div className="pr-2 prose prose-invert w-full">
+            <span className="block prose-sm text-white">Up next</span>
+            <h2 className="no-underline mt-1 mb-5">{title}</h2>
             <p className="max-w-prose text-white leading-normal">
               {description}
             </p>
@@ -43,9 +47,9 @@ export default function ProjectCard(props: Props) {
   return (
     <a href={link}>
       <div
-        className={`${bg} ${bgHover} flex items-center md:items-end gap-0 md:gap-6 flex-col-reverse md:flex-row rounded-2xl lg:rounded-3xl p-6 pb-0 md:pr-8 hover:scale-105 transition-colors transition-transform`}
+        className={`${bg} ${bgHover} flex items-center md:items-center gap-0 md:gap-8 flex-col md:flex-row rounded-2xl lg:rounded-3xl p-6 pb-0 md:pr-8 hover:scale-105 transition-colors transition-transform`}
       >
-        <img src={img} className="w-full md:w-1/2 pt-4 md:pt-0"></img>
+        <img src={img} className="w-full md:w-1/2 pt-4 md:pt-0 pb-4 my-2"></img>
         <div className="pr-2 prose prose-invert w-full md:pb-6">
           <h2 className="mt-2 mb-4">{title}</h2>
           <p className="text-white leading-normal">{description}</p>
@@ -56,7 +60,7 @@ export default function ProjectCard(props: Props) {
             ))}
           </div>
 
-          <div className="pt-4 prose-sm text-white flex gap-1.5 flex-row items-center justify-end w-full">
+          <div className="pt-4 prose-sm text-white flex gap-1.5 flex-row items-center justify-end w-full pb-6 md:pb-0">
             Read case study
             <ArrowLongRightIcon width={16} height={16}></ArrowLongRightIcon>
           </div>

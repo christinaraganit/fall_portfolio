@@ -6,7 +6,7 @@ import Overline from "@/components/overline";
 import ProjectCard from "@/components/project-card";
 import { ProjectCardColors } from "@/components/colors";
 
-export default function Watchdog() {
+export default function ChowNow() {
   return (
     <article className="flex flex-col items-center prose prose-base prose-slate max-w-full">
       <section
@@ -14,134 +14,139 @@ export default function Watchdog() {
         className="flex flex-col items-center pt-32 md:pt-48 w-full p-6"
       >
         <div id="title" className="max-w-4xl text-center">
-          <h1 className="text-5xl">Watchdog</h1>
+          <h1 className="text-5xl">Chow Now</h1>
           <p className="lead w-prose max-w-prose">
-            Anyone can be a victim of a scam—but not on our watch. Introducing
-            Watchdog, an AI-powered Google Chrome extension that sleuths out
-            scams, misinformation, and AI-generated content.
+            Disguised as a typical food delivery application, Chow Now offers a
+            discreet way for victims of domestic violence to confidentially
+            report incidents of abuse to local authorities, ensuring their
+            safety while avoiding suspicion from their abusers.
           </p>
         </div>
 
         <img
-          src="../case-studies/watchdog/watchdog_header_desktop.png"
+          src="../case-studies/chow-now/chownow_header_desktop.png"
           className="max-w-7xl w-full not-prose mt-2"
         ></img>
       </section>
 
       <div className="p-6 flex flex-col items-center gap-4">
         <div className="max-w-prose">
-          <Overline color="blue" text="Project overview"></Overline>
+          <Overline color="orange" text="Project overview"></Overline>
           <div className="grid sm:grid-cols-2 sm:gap-4 lg:gap-x-8">
             <Detail
               title="My roles"
-              text="Visual Designer, User Interface Designer, Frontend Developer"
+              text="User Experience Researcher, User Interface Designer, Frontend Developer"
             ></Detail>
             <Detail
               title="Team"
-              text="Christina Raganit, Devon Friend, Ray Gong, Matthew Hawksby"
+              text="Christina Raganit and Eunsaem Lee"
             ></Detail>
             <Detail
               title="Event"
-              text="May 20–21, 2023 | StormHacks 2023 Hackathon, Simon Fraser University"
+              text="March 11–12, 2023 | cmd-f 2023 Hackathon, University of British Columbia"
             ></Detail>
             <Detail
               title="Achievements"
-              text="2nd Place (out of 27 teams) and Best UI/UX Design Award"
+              text="1st Place Winner (out of 44 teams) and Best Design Award"
             ></Detail>
           </div>
         </div>
 
         <div className="max-w-prose">
-          <Overline color="blue" text="Problem space"></Overline>
-          <h2>Scammers are on the rise, and they're not going away.</h2>
-          <blockquote>
-            60% of scams originate from social media and technology platforms.
-          </blockquote>
+          <Overline color="orange" text="Content warning"></Overline>
+          <h4>
+            The following content may contain mentions of domestic abuse and
+            violence, which may be distressing or triggering for some
+            individuals.
+          </h4>
           <p>
-            Online scams have become increasingly prevalent, posing a
-            significant challenge to digital citizens. According to Liz Ziegler{" "}
-            <a href="#0">[0]</a>, fraud prevention director of Lloyds Banking
-            Group, banks are currently grappling with a “scam epidemic”. She
-            disclosed an alarming 87% surge in fraudulent activities. Ziegler
-            further mentioned that approximately 60% of these scams originate
-            from social media and technology platforms. As technology advances,
-            scammers continuously adopt new tactics to become more adept at
-            deceiving unsuspecting individuals, causing substantial financial
-            and emotional damage to their victims.
+            Please proceed with caution and prioritize your well-being while
+            reading. If you or someone you know is experiencing abuse, please
+            reach out to the appropriate hotline or support service for
+            assistance.
           </p>
+          <ul>
+            <li>VictimLinkBC: +1 (800) 563-0808</li>
+            <li>Battered Women's Support Services: (604) 687-1867</li>
+            <li>BC Society of Transition Houses: (604) 669-6943</li>
+            <li>
+              Domestic Violence and Abuse Support Services: (604) 640-7549
+            </li>
+            <li>South Asian Women's Centre: (604)-326-3000</li>
+          </ul>
+        </div>
 
-          <h3>
-            Contrary to popular belief, scams impact all age groups, not only
-            the elderly.
-          </h3>
-          <blockquote>
-            With a 34% higher likelihood, young adults from Generation X,
-            Millennials, and Generation Z (ages 18-59) in 2021 were more prone
-            to losing money to fraud compared to older adults ages 60 and over.
-          </blockquote>
+        <div className="max-w-prose">
+          <Overline color="orange" text="Problem space"></Overline>
+          <h2>
+            In 2019, a woman in Ohio reported an incident of domestic abuse by
+            pretending to order a pizza.
+          </h2>
           <p>
-            During 2021, young adults from Generation X, Millennials, and
-            Generation Z (ages 18-59) had a 34% higher likelihood of losing
-            money to fraud compared to older adults (ages 60 and over). Within
-            this age group, the rate of monetary loss due to job scams surpassed
-            that of older adults by more than five times. Notably, numerous
-            college students fell prey to scams after receiving deceptive
-            messages at their student email addresses, luring them with false
-            job opportunities <a href="#1">[1]</a>.
+            The discretion was imperative because the abuser was in the same
+            room as her. Fortunately, the situation ended well for the caller,
+            but according to April Heinze, 911 operations director for the
+            National Emergency Number Association (NENA), there’s “no universal
+            code language to let dispatchers know you’re in trouble”{" "}
+            <a href="#0">[0]</a>.
           </p>
           <p>
-            One of our team members, Devon Friend, recently had an encounter on
-            LinkedIn where someone attempted to scam him with a fake job
-            opportunity. Thankfully, he noticed some red flags during the
-            interaction, preventing him from falling victim to the scam. His
-            familiarity with common tactics employed by scammers allowed him to
-            escape the situation unharmed.
-          </p>
-          <p>
-            However, this incident raises concerns about individuals who may be
-            less aware and more susceptible to fraudulent activities. How can we
-            safeguard such individuals from scams and fraud?
+            The most dangerous time for a victim of domestic violence is when
+            they attempt to leave their abuser. Based on interviews with men who
+            have murdered their wives, it appears that the most common events
+            that trigger such violence are either threats of separation by their
+            partners or actual separation <a href="#1">[1]</a>.
           </p>
         </div>
 
         <div className="w-prose max-w-prose">
-          <Overline color="blue" text="Framing"></Overline>
+          <Overline color="orange" text="Framing"></Overline>
           <h2>
-            How might we develop a digital solution that safeguards individuals
-            of all ages, ensuring their protection against fraudulent activities
-            online?
+            How might we offer victims of domestic violence a discreet way to
+            report incidents of abuse and facilitate their access to the
+            necessary aid?
           </h2>
         </div>
 
         <div className="w-prose max-w-prose">
-          <Overline color="blue" text="Understanding users"></Overline>
-          <h3>Ensuring cross-platform accessibility</h3>
+          <Overline color="orange" text="Research"></Overline>
+          <h2>
+            Through secondary research, I identified insights on how to design
+            an app that could remain undetected.
+          </h2>
+          <h3>
+            Studying the relationship between sports and domestic violence
+          </h3>
           <p>
-            When encountering an online scam or fraud for the first time,
-            research shows that the majority of victims (43%) were using either
-            their computer or smartphone <a href="#2">[2]</a>. While the Chrome
-            extension can be easily downloaded by desktop users, it is crucial
-            to ensure the usability of Watchdog across mobile devices as well.
-            Hence, we must develop a solution which caters to the needs of both
-            desktop and mobile users.
+            A study conducted by the University of Calgary in Canada{" "}
+            <a href="#2">[2]</a> revealed that when the local football team was
+            playing, calls to a domestic violence hotline in Alberta increased
+            by 15%. Additionally, according to a 2013 research conducted by
+            Lancaster University <a href="#3">[3]</a>, domestic violence reports
+            increased by 38% at a police department in northwest England
+            following soccer matches in which the English national team lost,
+            and a 26% increase even when they won.
           </p>
-
-          <h3>Promoting flexibility and efficiency of use</h3>
+          <h3>Examining food delivery trends among sports fans</h3>
           <p>
-            Our goal is to ensure usability for novice Internet users while
-            simultaneously promoting flexibility for more experienced users. To
-            cater to the needs of experienced users, alternate methods for
-            experts must be incorporated into the user experience to improve
-            efficiency.
+            In a survey of 2,500 NFL fans, 76% reported that ordering food was a
+            part of their NFL plans, while 31% ordered in for most games and 17%
+            ordered in for every game <a href="#4">[4]</a>. Deliveroo, a popular
+            food delivery service, reported a 25% increase in orders through
+            their app in the hour leading up to each of England's Group Stage
+            kickoffs. Their “busiest ever dinner service for a Thursday night”
+            was during England's final group match against Belgium{" "}
+            <a href="#5">[5]</a>.
           </p>
         </div>
 
         <div className="w-prose max-w-prose">
-          <Overline color="blue" text="Solution"></Overline>
+          <Overline color="orange" text="Solution"></Overline>
           <h2>
-            Introducing Watchdog, an AI-powered Google Chrome extension and web
-            application that sleuths out scams, misinformation and AI-generated
-            content.
+            Disguised as a typical food delivery application, Chow Now enables
+            victims of domestic violence to confidentially report incidents of
+            abuse to local authorities with discretion, ensuring their safety
+            while avoiding suspicion from their abusers.
           </h2>
         </div>
 
@@ -149,7 +154,7 @@ export default function Watchdog() {
           <div>
             <div className="aspect-video">
               <img
-                src="../case-studies/watchdog/responsive.png"
+                src="../case-studies/chow-now/onboarding.png"
                 className="rounded-xl not-prose h-full w-auto"
               ></img>
             </div>
@@ -157,102 +162,124 @@ export default function Watchdog() {
             <div className="items-center flex flex-col xl:items-start">
               <div className="max-w-prose w-prose">
                 <h3 className="mt-4">
-                  Clarifying the purpose of Watchdog with our landing page
+                  Guiding users with a comprehensive onboarding flow
                 </h3>
                 <p>
-                  Crafted and coded with care, our responsive landing page
-                  presents an array of valuable information highlighting the
-                  features, benefits, and target users of Watchdog. I took on
-                  the role of both designer and frontend developer to create
-                  this captivating landing page. By leveraging graphical
-                  elements sourced from Freepik, I tailored them to align with
-                  the Watchdog brand, creating a cohesive brand experience.
+                  In Chow Now, certain controls deviate from the standard of
+                  typical takeout delivery apps. This intentional design choice
+                  enables users to access resources and report incidents of
+                  abuse to local authorities while prioritizing discretion. Our
+                  research has highlighted that the most perilous period for
+                  victims of abuse is when their abuser becomes aware of their
+                  intention to leave. Therefore, a thorough onboarding flow will
+                  provide users with a clear understanding of how to navigate
+                  the app effectively.
                 </p>
               </div>
             </div>
           </div>
           <div>
-            <div className="aspect-video object-contain">
-              <video
-                autoPlay
-                loop
-                muted
-                src="../case-studies/watchdog/landing_page.mp4"
-                className="rounded-xl aspect-video object-contain 
-                outline outline-20 -outline-offset-20 border border-blue-100 lg:outline-20 lg:-outline-offset-20 outline-blue-100"
-              ></video>
+            <div className="aspect-video">
+              <img
+                src="../case-studies/chow-now/location-services.png"
+                className="rounded-xl not-prose h-full w-auto"
+              ></img>
             </div>
 
             <div className="items-center flex flex-col xl:items-start">
               <div className="max-w-prose w-prose">
                 <h3 className="mt-4">
-                  Providing seamless cross-platform access with our web
-                  application
+                  Enhancing the efficiency of reporting incidents with location
+                  services
                 </h3>
                 <p>
-                  Watchdog is completely responsive, ensuring accessibility to
-                  users on both mobile and desktop devices. By simply inputting
-                  text into the designated field, users can harness the power of
-                  our large language AI model, which promptly analyzes the
-                  content and provides valuable insights regarding its
-                  likelihood of being a scam, misinformation, or AI-generated.
+                  By requesting the user's location with location services, Chow
+                  Now streamlines the reporting process of domestic violence
+                  incidents to local authorities and emergency contacts, which
+                  is crucial for victims as it enables faster and more accurate
+                  response times, ensuring their safety and well-being.
                 </p>
               </div>
             </div>
           </div>
           <div>
-            <div className="aspect-video object-contain">
-              <video
-                autoPlay
-                loop
-                muted
-                src="../case-studies/watchdog/chrome_extension.mp4"
-                className="rounded-xl"
-              ></video>
+            <div className="aspect-video">
+              <img
+                src="../case-studies/chow-now/add-emergency-contact.png"
+                className="rounded-xl not-prose h-full w-auto"
+              ></img>
             </div>
 
             <div className="items-center flex flex-col xl:items-start">
               <div className="max-w-prose w-prose">
                 <h3 className="mt-4">
-                  Identifying fraudulent content online with our Chrome
-                  extension
+                  Assisting users in preparing for emergencies by including
+                  emergency contacts
                 </h3>
                 <p>
-                  Desktop users can effortlessly identify suspicious content
-                  without relying on the web application open on another tab. By
-                  downloading our Google Chrome extension, desktop users can
-                  seamlessly integrate its functionality into their browsing
-                  experience, ensuring uninterrupted exploration while
-                  effectively detecting potential threats.
+                  Chow Now offers users the capability to add emergency
+                  contacts, enabling a swift connection to trusted individuals
+                  who can provide the victim with immediate support during
+                  critical situations. This functionality empowers users by
+                  allowing them to establish a support system, providing an
+                  additional layer of protection in times of distress.
                 </p>
               </div>
             </div>
           </div>
 
           <div>
-            <div className="aspect-video object-contain">
-              <video
-                autoPlay
-                loop
-                muted
-                src="../case-studies/watchdog/accelerators.mp4"
-                className="rounded-xl"
-              ></video>
+            <div className="aspect-video">
+              <img
+                src="../case-studies/chow-now/report-incident.png"
+                className="rounded-xl not-prose h-full w-auto"
+              ></img>
             </div>
 
             <div className="items-center flex flex-col xl:items-start">
               <div className="max-w-prose w-prose">
                 <h3 className="mt-4">
-                  Streamlining the user experience with carefully-designed
-                  accelerators
+                  Facilitating the ability to report incidents of domestic
+                  violence
                 </h3>
                 <p>
-                  Empowering advanced desktop users, our Google Chrome extension
-                  offers an additional layer of functionality. With a simple
-                  right-click on any paragraph, users can initiate a scan that
-                  swiftly evaluates the content for suspicious material,
-                  allowing users to prioritize their browsing without any
-                  disruptive interruptions.
+                  Users can report incidents of domestic violence to local
+                  authorities by placing an order from any “restaurant”.
+                  Subsequently, users can provide crucial details regarding the
+                  involved parties, the nature of the emergency, and the
+                  incident's timing. This information will be promptly
+                  transmitted to the local authorities, along with any emergency
+                  contacts the user has added for swift action and support.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div className="aspect-video">
+              <img
+                src="../case-studies/chow-now/toggle-views.png"
+                className="rounded-xl not-prose h-full w-auto"
+              ></img>
+            </div>
+
+            <div className="items-center flex flex-col xl:items-start">
+              <div className="max-w-prose w-prose">
+                <h3 className="mt-4">
+                  Providing discretion by allowing toggling between different
+                  views
+                </h3>
+                <p>
+                  Chow Now empowers users to maintain discretion and safeguard
+                  themselves from abusers by offering the ability to toggle
+                  between different views. These view toggling controls are
+                  strategically positioned at the bottom of the screen, ensuring
+                  convenient accessibility for users on mobile devices. Within
+                  one view, users are presented with comprehensive resources on
+                  domestic violence and abuse. In another view, relevant
+                  information about local restaurants is displayed. The featured
+                  restaurants are sourced from the area to appear more
+                  believable.
                 </p>
               </div>
             </div>
@@ -260,10 +287,10 @@ export default function Watchdog() {
         </div>
 
         <div className="lg:px-8">
-          <Overline color="blue" text="Branding"></Overline>
+          <Overline color="orange" text="Branding"></Overline>
 
           <img
-            src="../case-studies/watchdog/watchdog_brand.png"
+            src="../case-studies/chow-now/chownow_brand.png"
             className="rounded-xl not-prose mb-2 lg:mb-0"
           ></img>
         </div>
