@@ -82,7 +82,7 @@ export default function Watchdog() {
           </div>
 
           <div className="max-w-prose w-prose">
-            <h2>
+            <h2 className="pt-4">
               Contrary to popular belief, scams impact all age groups, not only
               the elderly.
             </h2>

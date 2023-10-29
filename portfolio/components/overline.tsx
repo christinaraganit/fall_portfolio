@@ -10,6 +10,12 @@ export default function Overline(props: Props) {
         {props.text}
       </div>
     );
+  } else if (props.color == "lime") {
+    return (
+      <div className="text-lime-500 prose prose-sm font-medium block pt-4 mb-2 w-fit">
+        {props.text}
+      </div>
+    );
   } else if (props.color == "indigo") {
     return (
       <div className="text-indigo-500 prose prose-sm font-medium block pt-4 mb-2 w-fit">
