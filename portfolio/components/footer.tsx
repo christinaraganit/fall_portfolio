@@ -29,7 +29,7 @@ export default function Footer() {
           </a>
           <a
             className="relative block font-medium transition rounded-sm  text-blue-500 hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
-            href="https://drive.google.com/file/d/1ii2QdqWnneSKMQNJNmThxrUyXNA1khl7/view?usp=sharing"
+            href="https://drive.google.com/file/d/1XdjiOlwxWced9ZCvzwyLcPiZANGwptAV/view?usp=sharing"
           >
             Resume
           </a>

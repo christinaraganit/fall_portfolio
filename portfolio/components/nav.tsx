@@ -49,7 +49,7 @@ export default function Nav() {
           <li>
             <a
               className="relative block px-3 py-2 transition text-blue-500 hover:text-blue-700"
-              href="https://drive.google.com/file/d/1ii2QdqWnneSKMQNJNmThxrUyXNA1khl7/view?usp=sharing"
+              href="https://drive.google.com/file/d/1XdjiOlwxWced9ZCvzwyLcPiZANGwptAV/view?usp=sharing"
             >
               Resume
             </a>
@@ -113,7 +113,7 @@ export default function Nav() {
               <li>
                 <a
                   className="relative block px-3 py-2 transition hover:text-blue-700"
-                  href="https://drive.google.com/file/d/1ii2QdqWnneSKMQNJNmThxrUyXNA1khl7/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1XdjiOlwxWced9ZCvzwyLcPiZANGwptAV/view?usp=sharing"
                 >
                   Resume
                 </a>

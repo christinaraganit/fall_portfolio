@@ -69,6 +69,10 @@ const config: Config = {
           },
         },
       },
+      screens: {
+        "3xl": "1440px",
+        "4xl": "1536px",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

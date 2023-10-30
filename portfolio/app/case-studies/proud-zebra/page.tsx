@@ -10,7 +10,7 @@ import Head from "next/head";
 
 export default function ProudZebra() {
   return (
-    <article className="flex flex-col prose prose-base prose-slate max-w-full">
+    <article className="flex flex-col prose prose-base prose-slate max-w-full 3xl:px-20 4xl:px-40">
       <section
         id="header-image"
         className="flex flex-col items-center pt-32 md:pt-48 w-full p-6"
@@ -582,7 +582,7 @@ export default function ProudZebra() {
           src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Ftfa9boX45xjNK3BeWOiiEw%2FPrototypes-and-Wireframes%3Fpage-id%3D298%253A9178%26type%3Ddesign%26node-id%3D298-9179%26viewport%3D1869%252C1226%252C0.29%26t%3DKNJaIbhjetvjX4bv-1%26scaling%3Dscale-down%26starting-point-node-id%3D298%253A9179%26show-proto-sidebar%3D1%26mode%3Ddesign"
         ></iframe>
 
-        <div className="grid lg:grid-cols-2 p-6 lg:px-12 items-center">
+        <div className="grid lg:grid-cols-2 p-6 lg:gap-12 lg:px-12 items-center">
           <div className="max-w-prose w-prose">
             <Overline color="indigo" text="My contributions"></Overline>
             <h2>

@@ -8,7 +8,7 @@ import { ProjectCardColors } from "@/components/colors";
 
 export default function Watchdog() {
   return (
-    <article className="flex flex-col prose prose-base prose-slate max-w-full">
+    <article className="flex flex-col prose prose-base prose-slate max-w-full 3xl:px-20 4xl:px-40">
       <section
         id="header-image"
         className="flex flex-col items-center pt-32 md:pt-48 w-full p-6"

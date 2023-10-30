@@ -12,7 +12,7 @@ interface Props {
 export default function Page(props: Props) {
   if (props.title == "Home") {
     return (
-      <main className="max-w-full flex flex-col items-center">
+      <main className="bg-white max-w-full flex flex-col items-center">
         <div className="max-w-4xl w-full flex flex-col">
           <div className="prose prose-base p-6 pt-20 md:pt-40">
             <img
