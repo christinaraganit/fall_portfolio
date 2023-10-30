@@ -38,7 +38,7 @@ export default function Watchdog() {
             ></Detail>
             <Detail
               title="Team"
-              text="Christina Raganit, Devon Friend, Ray Gong, Matthew Hawksby"
+              text="Christina, Devon, Ray, and Matthew"
             ></Detail>
             <Detail
               title="Event"

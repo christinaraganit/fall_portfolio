@@ -37,10 +37,7 @@ export default function ChowNow() {
               title="My roles"
               text="User Experience Researcher, User Interface Designer, Frontend Developer"
             ></Detail>
-            <Detail
-              title="Team"
-              text="Christina Raganit and Eunsaem Lee"
-            ></Detail>
+            <Detail title="Team" text="Christina and Eunsaem"></Detail>
             <Detail
               title="Event"
               text="March 11–12, 2023 | cmd-f 2023 Hackathon, University of British Columbia"

@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Overline from "./overline";
 
 interface Props {
@@ -24,14 +25,14 @@ export default function Page(props: Props) {
               Vancouver.
             </h1>
             <p>
-              I'm a designer-developer powerhouse who's knowledgeable in user
-              interface design, frontend development, and user experience
-              research. Currently creating and innovating with SFU Surge as
-              their Director of Visual Design.
+              My unique background in software development makes me a versatile
+              designer capable of crafting technically-feasible interfaces and
+              effectively collaborating between technical development teams and
+              non-technical stakeholders.
             </p>
           </div>
         </div>
-        <div className="max-w-6xl p-6 mt-4 mb:mt-8">{props.children}</div>
+        {props.children}
       </main>
     );
   } else if (props.title == "About") {
