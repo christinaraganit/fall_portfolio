@@ -10,7 +10,7 @@ import Head from "next/head";
 
 export default function ProudZebra() {
   return (
-    <article className="flex flex-col prose prose-base prose-slate max-w-full 3xl:px-20 4xl:px-40">
+    <article className="flex flex-col prose prose-base prose-slate max-w-full">
       <section
         id="header-image"
         className="flex flex-col items-center pt-32 md:pt-48 w-full p-6"
@@ -33,7 +33,7 @@ export default function ProudZebra() {
       </section>
 
       <div className="flex flex-col">
-        <div className="p-6 pb-0 lg:pb-6 lg:px-12">
+        <div className="p-6 pb-0 lg:pb-6 lg:px-12 3xl:px-20 4xl:px-40">
           <Overline color="indigo" text="Project overview"></Overline>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 lg:gap-12">
             <Detail
@@ -55,7 +55,7 @@ export default function ProudZebra() {
           </div>
         </div>
 
-        <div className="grid lg:grid-cols-2 lg:gap-12 p-6 lg:px-12">
+        <div className="grid lg:grid-cols-2 lg:gap-12 p-6 lg:px-12 3xl:px-20 4xl:px-40">
           <div className="max-w-prose w-prose">
             <Overline color="indigo" text="Our client"></Overline>
             <h3>
@@ -98,7 +98,7 @@ export default function ProudZebra() {
           </div>
         </div>
 
-        <div className="bg-indigo-50/80 p-6 lg:px-12 w-full">
+        <div className="bg-indigo-50/80 p-6 lg:px-12 w-full 3xl:px-20 4xl:px-40">
           <div className="max-w-prose w-prose">
             <Overline color="indigo" text="Framing"></Overline>
             <h2 className="text-3xl">
@@ -109,7 +109,7 @@ export default function ProudZebra() {
           </div>
         </div>
 
-        <section className="p-6 pr-0 lg:pl-12 grid gap-4">
+        <section className="p-6 lg:pr-0 lg:pl-12 grid gap-4 bg-white 3xl:pl-20 4xl:pl-40">
           <div className="grid lg:grid-cols-3 gap-4">
             <div className="items-center grid">
               <div className="max-w-prose w-prose">
@@ -213,7 +213,7 @@ export default function ProudZebra() {
           </div>
         </section>
 
-        <div className="bg-lime-50/70">
+        <div className="bg-lime-50/70 3xl:px-20 4xl:px-40">
           <div className="grid lg:grid-cols-2 lg:gap-12 p-6 lg:px-12">
             <div className="max-w-prose w-prose">
               <Overline color="lime" text="Primary user research"></Overline>
@@ -324,7 +324,7 @@ export default function ProudZebra() {
           </div>
         </div>
 
-        <div className="grid items-center lg:grid-cols-2 mt-2 p-6 lg:px-12 lg:gap-12">
+        <div className="grid items-center lg:grid-cols-2 mt-2 p-6 lg:px-12 lg:gap-12 3xl:px-20 4xl:px-40">
           <div className="max-w-prose w-prose">
             <Overline color="indigo" text="Exploring solutions"></Overline>
 
@@ -370,7 +370,7 @@ export default function ProudZebra() {
           </div>
         </div>
 
-        <div className="p-6 lg:px-12">
+        <div className="p-6 lg:px-12 3xl:px-20 4xl:px-40">
           <div className="max-w-prose">
             <Overline color="indigo" text="Low-fidelity wireframes"></Overline>
             <p>
@@ -388,15 +388,15 @@ export default function ProudZebra() {
           </div>
         </div>
 
-        <div className="p-6 lg:px-12 grid items-center lg:grid-cols-2 lg:mb-6 lg:gap-12">
+        <div className="p-6 lg:px-12 grid items-center lg:grid-cols-2 lg:mb-6 lg:gap-12 3xl:px-20 4xl:px-40 bg-white">
           <div className="max-w-prose w-prose">
             <Overline color="indigo" text="Branding redesign"></Overline>
-            <p>
+            <h2>
               To stand out from competitors and establish a unique identity
               within the market, we redesigned the brand of Proud Zebra to
               effectively communicate our values and appeal to our target
               audience.
-            </p>
+            </h2>
 
             <div className="pt-2">
               <FeatureCard
@@ -432,9 +432,14 @@ export default function ProudZebra() {
           </div>
         </div>
 
-        <div className="bg-indigo-50/80 pt-4 pt-6 px-6 lg:px-12">
+        <div className="bg-indigo-50/80 pt-4 pt-6 px-6 lg:px-12 3xl:px-20 4xl:px-40">
           <div className="max-w-prose">
             <Overline color="indigo" text="Component library"></Overline>
+            <h2>
+              As the team's interaction designer, I created a component library
+              in Figma in order to ensure consistency and streamline the process
+              of creating prototypes.
+            </h2>
             <p>
               As the interaction designer of the team, I was responsible for
               working with the visual designers in translating the redesigned
@@ -456,12 +461,12 @@ export default function ProudZebra() {
           <div>
             <img
               src="../case-studies/proud-zebra/design-system.png"
-              className="rounded-tl-lg rounded-tr-lg"
+              className="rounded-tl-lg rounded-tr-lg xl:rounded-tl-3xl xl:rounded-tr-3xl"
             ></img>
           </div>
         </div>
 
-        <div className="grid lg:grid-cols-2 p-6 lg:px-12">
+        <div className="grid lg:grid-cols-2 p-6 lg:px-12 3xl:px-20 4xl:px-40 items-center bg-white">
           <div className="w-prose max-w-prose">
             <Overline color="indigo" text="Usability testing"></Overline>
             <h2>
@@ -501,7 +506,7 @@ export default function ProudZebra() {
           </div>
         </div>
 
-        <div className="p-6 lg:px-12">
+        <div className="p-6 lg:px-12 3xl:px-20 4xl:px-40">
           <div className="max-w-prose w-prose">
             <Overline color="indigo" text="Iterations"></Overline>
             <p>
@@ -521,7 +526,7 @@ export default function ProudZebra() {
           </div>
         </div>
 
-        <div className="bg-lime-50/70 p-6 lg:px-12">
+        <div className="bg-lime-50/70 p-6 lg:px-12 3xl:px-20 4xl:px-40">
           <div className="grid items-center lg:grid-cols-2">
             <div className="max-w-prose w-prose">
               <Overline color="lime" text="Brand perception survey"></Overline>
@@ -548,7 +553,7 @@ export default function ProudZebra() {
           </div>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-4 lg:gap-12 p-6 lg:px-12">
+        <div className="grid lg:grid-cols-3 gap-4 lg:gap-12 p-6 lg:px-12 3xl:px-20 4xl:px-40">
           <div className="items-center grid">
             <div className="max-w-prose w-prose">
               <Overline color="indigo" text="Technical feasibility"></Overline>
@@ -574,7 +579,7 @@ export default function ProudZebra() {
 
         <img
           src="../case-studies/proud-zebra/mobile-prototypes.png"
-          className="p-6 lg:px-12"
+          className="p-6 my-0 lg:px-12"
         ></img>
 
         <iframe
@@ -582,7 +587,7 @@ export default function ProudZebra() {
           src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Ftfa9boX45xjNK3BeWOiiEw%2FPrototypes-and-Wireframes%3Fpage-id%3D298%253A9178%26type%3Ddesign%26node-id%3D298-9179%26viewport%3D1869%252C1226%252C0.29%26t%3DKNJaIbhjetvjX4bv-1%26scaling%3Dscale-down%26starting-point-node-id%3D298%253A9179%26show-proto-sidebar%3D1%26mode%3Ddesign"
         ></iframe>
 
-        <div className="grid lg:grid-cols-2 p-6 lg:gap-12 lg:px-12 items-center">
+        <div className="grid lg:grid-cols-2 p-6 lg:gap-12 lg:px-12 items-center 3xl:px-20 4xl:px-40">
           <div className="max-w-prose w-prose">
             <Overline color="indigo" text="My contributions"></Overline>
             <h2>
@@ -612,7 +617,7 @@ export default function ProudZebra() {
           <div className="rounded-xl">
             <img
               src="../case-studies/proud-zebra/christina-wireframing.jpg"
-              className="my-0 rounded-xl aspect-video object-cover"
+              className="my-0 rounded-xl aspect-video object-cover w-full md:max-w-2xl lg:max-w-5xl"
             ></img>
             <figcaption>
               Christina sketching prototypes on paper before making the
@@ -621,7 +626,7 @@ export default function ProudZebra() {
           </div>
         </div>
 
-        <div className="grid lg:grid-cols-2 lg:gap-12 p-6 lg:px-12">
+        <div className="grid lg:grid-cols-2 lg:gap-12 p-6 lg:px-12 3xl:px-20 4xl:px-40">
           <div className="max-w-prose">
             <Overline color="indigo" text="Takeaways"></Overline>
             <h2>
